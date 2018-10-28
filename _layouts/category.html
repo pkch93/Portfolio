@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<h1 class="title">{{page.category}}</h1>
+<h2 class="recent">Recent Post</h2>
+<ul class="posts">
+  {% for post in site.categories[page.category] %}
+    <a href="{{site.baseurl}}{{post.url}}">
+      <li class="post">
+          <h3>
+            {{post.title}}
+          </h3>
+        <p>
+          {{post.date | date: "%B %d, %Y"}}
+          <span class="stack">
+            {% if page.category == "project" %}
+              technical stack :
+              {% for detail in post.more_details %}
+                <i class="fab fa-{{detail}}"></i>
+              {% endfor %}
+            {% else %}
+              {{detail}}
+            {% endif %}
+          </span>
+        </p>
+      </li>
+    </a>
+  {% endfor %}
+</ul>

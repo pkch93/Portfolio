@@ -2,7 +2,8 @@
 layout: post
 title: "Hello Jekyll"
 date: 2018-10-27 23:00:00 +0900
-categories: jekyll update
+category: project
+more_details: ["html5", "css3"]
 ---
 
 # Webpack & React-Redux Practice

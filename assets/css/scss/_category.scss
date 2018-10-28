@@ -1,0 +1,41 @@
+@import "_part/shadows";
+
+.container{
+  .title{
+    font-size: 60px;
+  }
+
+  .recent {
+    color: #a9a9a9;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .posts{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    a {
+      display: block;
+      width: 100%;
+    }
+
+    .post {
+      width:inherit;
+      padding: 15px;
+      border: 1px solid #adb5bd;
+      margin: 10px 0;
+      h3 {
+        font-size: 30px;
+        margin: 0;
+      }
+      .stack{
+        float: right;
+      }
+    }
+
+    .post:hover{
+      box-shadow: $content-shadow;
+    }
+  }
+}

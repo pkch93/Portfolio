@@ -1,0 +1,65 @@
+@import "_part/shadows";
+@import "_part/colors";
+
+.sidebar{
+  width: 300px;
+  min-height: 100%;
+  padding: 0 10px;
+  border-right: 1px solid $border-color;
+  background: $sidebar-color;
+  user-select: none;
+  .profile{
+    text-align: center;
+    > img {
+      display: block;
+      margin:10px auto;
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: $profile-shadow;
+    }
+
+    .profile--name {
+      font-size: 30px;
+      margin: 15px auto;
+    }
+
+    .profile--intro{
+      margin: 5px auto;
+    }
+  }
+
+  .menu{
+    .categories{
+      .category{
+        margin: 10px auto;
+        font-size: 20px;
+        list-style: circle;
+        a {
+          cursor: pointer;
+        }
+        a:hover{
+          color: #00f;
+        }
+      }
+    }
+  }
+
+  .contact{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 0 10px;
+    width: inherit;
+    .social{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+
+      .icon{
+        font-size: 25px;
+        margin: 0 5px;
+      }
+    }
+
+  }
+}
