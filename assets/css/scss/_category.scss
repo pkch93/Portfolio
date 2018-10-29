@@ -13,18 +13,19 @@
 
   .posts{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 50px;
     a {
       display: block;
       width: 100%;
+      margin: 10px 0;
     }
 
     .post {
-      width:inherit;
+      width: inherit;
       padding: 15px;
       border: 1px solid #adb5bd;
-      margin: 10px 0;
+
       h3 {
         font-size: 30px;
         margin: 0;
