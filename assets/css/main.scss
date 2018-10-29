@@ -30,5 +30,63 @@ a {
   .container{
     width: 100%;
     padding: 0 50px;
+    .main__wrapper{
+      .intro-imgs{
+        display: flex;
+        justify-content: center;
+        height: 60%;
+        > img{
+          display: inline-block;
+          position: relative;
+          width: 300px;
+          height: 300px;
+          top: 100px;
+          left: 0;
+          z-index: 3;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+      }
+
+      .intro-imgs:before{
+        display: inline-block;
+        position: relative;
+        content: "";
+        background-image: url('../img/presentation.jpg');
+        background-size: 300px 300px;
+        width: 300px;
+        height: 300px;
+        top: 75px;
+        left: 0;
+        z-index: 2;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transform: rotate(-5deg);
+      }
+
+      .intro-imgs:after{
+        display: inline-block;
+        position: relative;
+        content: "";
+        background-image: url('../img/social-impact-hackerthon-prize.jpg');
+        background-size: 300px 300px;
+        width: 300px;
+        height: 300px;
+        top: 75px;
+        left: 0;
+        z-index: 4;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transform: rotate(3deg);
+      }
+
+      .welcome {
+        position: relative;
+        text-align: center;
+        top: 200px;
+      }
+
+      .notice{
+        float: right;
+        color: #696969;
+      }
+    }
   }
 }

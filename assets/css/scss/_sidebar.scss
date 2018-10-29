@@ -2,7 +2,7 @@
 @import "_part/colors";
 
 .sidebar{
-  width: 300px;
+  min-width: 215px;
   min-height: 100%;
   padding: 0 10px;
   border-right: 1px solid $border-color;
@@ -54,7 +54,6 @@
       display: flex;
       justify-content: center;
       padding: 0;
-
       .icon{
         font-size: 25px;
         margin: 0 5px;
