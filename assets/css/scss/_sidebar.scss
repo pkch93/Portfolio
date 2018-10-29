@@ -2,6 +2,7 @@
 @import "_part/colors";
 
 .sidebar{
+  position: fixed;
   min-width: 215px;
   min-height: 100%;
   padding: 0 10px;
@@ -10,8 +11,8 @@
   user-select: none;
   .profile{
     text-align: center;
-    > img {
-      display: block;
+    > a > img {
+      display: inline-block;
       margin:10px auto;
       width: 100px;
       border-radius: 50%;
@@ -59,6 +60,5 @@
         margin: 0 5px;
       }
     }
-
   }
 }
