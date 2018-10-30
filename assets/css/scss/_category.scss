@@ -11,9 +11,7 @@
     font-size: 40px;
   }
 
-  .posts{
-    display: flex;
-    flex-wrap: wrap;
+  .cards{
     padding: 0 50px;
     a {
       display: block;
@@ -21,7 +19,7 @@
       margin: 10px 0;
     }
 
-    .post {
+    .card {
       width: inherit;
       padding: 15px;
       border: 1px solid #adb5bd;
@@ -35,7 +33,7 @@
       }
     }
 
-    .post:hover{
+    .card:hover{
       box-shadow: $content-shadow;
     }
   }

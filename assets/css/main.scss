@@ -3,6 +3,7 @@
 @import "scss/sidebar";
 @import "scss/category";
 @import "scss/post";
+@import "scss/profile";
 
 * {
   font-family: 'Do Hyeon', sans-serif;
@@ -22,6 +23,10 @@ li {
 a {
   text-decoration: none;
   color: #000;
+}
+
+.active{
+  color: #00f;
 }
 
 .wrapper{

@@ -1,5 +1,6 @@
 
 {% assign profile=site.data.introduce.profile %}
+{% assign contact=site.data.contact %}
 {% assign pages_list = site.pages %}
 <nav class="sidebar">
   <div class="profile">
@@ -14,9 +15,8 @@
     <ul class="categories">
         {% for node in pages_list %}
           {% if node.layout == "category" %}
-            <li class="category
-            {% if page.url == node.url %} active {% endif %}">
-              <a href="{{site.baseurl}}{{node.url}}">{{node.title}}</a>
+            <li class="category">
+              <a class="{% if page.category == node.category %} active {% endif %}" href="{{site.baseurl}}{{node.url}}">{{node.title}}</a>
             </li>
           {% endif %}
         {% endfor %}
@@ -24,8 +24,17 @@
   </div>
   <div class="contact">
     <h3><i class="fas fa-address-card"></i> Contact</h3>
+    {% for email in contact.email%}
+      <p class="email">
+        {% if email.name == "envelope"%}
+          <i class="far fa-{{email.name}}"></i> <span>{{email.mail}}</span>
+        {% else %}
+          <i class="fab fa-{{email.name}}"></i> <span>{{email.mail}}</span>
+        {% endif %}
+      </p>
+    {% endfor %}
     <ul class="social">
-      {% for social in site.data.social %}
+      {% for social in contact.social %}
         <li class="icon">
           <a href="{{social.link}}" target="_blank">
             <i class="fab fa-{{social.name}}"></i>

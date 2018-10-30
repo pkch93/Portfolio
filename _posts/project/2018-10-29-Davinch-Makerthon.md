@@ -16,24 +16,16 @@ more_details: ["js", "node", "react", "sass", "git"]
 ```
 
 ## Environment
-### frontend
-react.js & sass
 
-### backend
-Node.js & Koa
-
-### DB
-MongoDB
+frontend | backend | DB
+:--------: | :--------: | :--------:
+react.js & sass | Node.js & Koa | MongoDB
 
 ## Member
-### 정다은
-팀장, 기획
 
-### 박경철
-back-end & DB design
-
-### 노우제
-front-end & UI/UX design
+정다은 | 박경철 | 노우제
+:----: | :----: | :----:
+팀장, 기획 | back-end & DB design | front-end & UI/UX design
 
 ## 참가 개요
 

@@ -5,7 +5,7 @@
   position: fixed;
   min-width: 215px;
   min-height: 100%;
-  padding: 0 10px;
+  padding: 0 10px 160px;
   border-right: 1px solid $border-color;
   background: $sidebar-color;
   user-select: none;
@@ -45,19 +45,27 @@
     }
   }
 
-  .contact{
-    position: fixed;
+  .contact {
+    position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0 10px;
-    width: inherit;
-    .social{
+    margin: 10px;
+    height: 155px;
+    .social {
       display: flex;
       justify-content: center;
       padding: 0;
-      .icon{
+
+      .icon {
         font-size: 25px;
         margin: 0 5px;
+      }
+    }
+
+    .email {
+      span {
+        color: $lightgray;
+        user-select: text;
       }
     }
   }

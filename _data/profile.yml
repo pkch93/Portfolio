@@ -1,0 +1,51 @@
+education:
+  - school: 포항
+    academic: 고등학교
+    period: 2009.03~2012.02
+    status: 졸업
+
+  - school: 충남
+    academic: 대학교
+    period: 2012.03~2019.02
+    status: 졸업예정
+    major:
+      main: 농업경제학과
+      sub: 컴퓨터공학과
+    credit:
+      total: 133
+      average: 3.86
+      subtotal: 30
+      subaverage: 4.05
+
+certificate:
+  - name: 정보처리기사
+    acquisition_date: 2018.05.25
+    host: 한국산업인력공단
+
+  - name: SQLD
+    acquisition_date: 2017.12.29
+    host: 한국데이터진흥원
+
+prize:
+
+activities:
+  - name: 다빈치 SW 메이커 페스티벌
+    type: 공모전/대회
+    period: 2018.10.13~2018.11.03
+    details:
+    url:
+  - name: Collathon
+    type: 공모전/대회
+    period: 2018.09.12~2018.10.16
+    details:
+    url:
+  - name: 소셜임팩트해커톤
+    type: 공모전/대회
+    period: 2018.06.08~2018.06.09
+    details:
+    url:
+  - name: 멋쟁이사자처럼
+    type: 동아리
+    period: 2018.03~2018.08
+    details:
+    url:

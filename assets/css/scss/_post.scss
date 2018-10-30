@@ -2,4 +2,14 @@
   p, code {
     font-family: "Gothic A1", sans-serif;
   }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    th, td {
+      padding: 10px;
+      margin: 0 2px;
+      border-bottom: 1px solid #a9a9a9;
+    }
+  }
 }
