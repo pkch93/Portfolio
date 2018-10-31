@@ -37,13 +37,13 @@ activities:
   - name: 다빈치 SW 메이커 페스티벌
     type: 공모전/대회
     period: 2018.10.13~2018.11.03
-    details:
-    url:
+    details: 공공데이터를 활용한 청년 취·창업 정보제공 및 홍보 서비스 개발
+    url: https://pkch93.github.io/project/2018/10/29/Davinch-Makerthon/
   - name: Collathon
     type: 공모전/대회
     period: 2018.09.12~2018.10.16
-    details:
-    url:
+    details: 반려동물의 혈통 및 족보를 관리 및 분양 알선 플랫폼
+    url: https://pkch93.github.io/project/2018/10/29/Collathon/
   - name: 소셜임팩트해커톤
     type: 공모전/대회
     period: 2018.06.08~2018.06.09
@@ -52,5 +52,5 @@ activities:
   - name: 멋쟁이사자처럼
     type: 동아리
     period: 2018.03~2018.08
-    details:
-    url:
+    details: 전국 단위 비전공자 웹 개발 및 창업 동아리
+    url: https://pkch93.github.io/project/2018/10/29/likelion-hackerthon/

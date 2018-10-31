@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T20:40:49+09:00</updated><id>http://localhost:4000/</id><title type="html">pkch’s Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">다빈치 SW 메이커 페스티벌</title><link href="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/" rel="alternate" type="text/html" title="다빈치 SW 메이커 페스티벌" /><published>2018-10-29T14:00:00+09:00</published><updated>2018-10-29T14:00:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Davinch-Makerthon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/">&lt;p&gt;다빈치 SW 메이커 페스티벌 &amp;lt;청춘어람&amp;gt; (by 멋쟁이청년처럼)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T23:57:55+09:00</updated><id>http://localhost:4000/</id><title type="html">pkch’s Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">다빈치 SW 메이커 페스티벌</title><link href="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/" rel="alternate" type="text/html" title="다빈치 SW 메이커 페스티벌" /><published>2018-10-29T14:00:00+09:00</published><updated>2018-10-29T14:00:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Davinch-Makerthon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/">&lt;p&gt;다빈치 SW 메이커 페스티벌 &amp;lt;청춘어람&amp;gt; (by 멋쟁이청년처럼)&lt;/p&gt;
 
 &lt;p&gt;주제 : 공공데이터와 공간정보를 이용한 세상을 이롭게 하는 서비스&lt;/p&gt;
 
@@ -66,23 +66,144 @@
 
 &lt;h3 id=&quot;mybatis&quot;&gt;Mybatis&lt;/h3&gt;
 
-&lt;h3 id=&quot;jpa--hibernate&quot;&gt;JPA &amp;amp; Hibernate&lt;/h3&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Spring MVC</summary></entry><entry><title type="html">Collathon</title><link href="http://localhost:4000/project/2018/10/29/Collathon/" rel="alternate" type="text/html" title="Collathon" /><published>2018-10-29T13:40:00+09:00</published><updated>2018-10-29T13:40:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Collathon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Collathon/"></content><author><name></name></author><category term="project" /><summary type="html"></summary></entry><entry><title type="html">Java</title><link href="http://localhost:4000/tech_stack/2018/10/29/java/" rel="alternate" type="text/html" title="Java" /><published>2018-10-29T13:31:00+09:00</published><updated>2018-10-29T13:31:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/java</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/java/">&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
+&lt;h3 id=&quot;jpa--hibernate&quot;&gt;JPA &amp;amp; Hibernate&lt;/h3&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Spring MVC</summary></entry><entry><title type="html">Collathon</title><link href="http://localhost:4000/project/2018/10/29/Collathon/" rel="alternate" type="text/html" title="Collathon" /><published>2018-10-29T13:40:00+09:00</published><updated>2018-10-29T13:40:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Collathon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Collathon/"></content><author><name></name></author><category term="project" /><summary type="html"></summary></entry><entry><title type="html">Java</title><link href="http://localhost:4000/tech_stack/2018/10/29/java/" rel="alternate" type="text/html" title="Java" /><published>2018-10-29T13:31:00+09:00</published><updated>2018-10-29T13:31:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/java</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/java/">&lt;p&gt;자바는 제가 컴퓨터공학에 처음 입문했을 때부터 다뤘던 프로그래밍 언어입니다. (2016.09월부터 사용)&lt;/p&gt;
+
+&lt;p&gt;얼마 전까지 주로 &lt;em&gt;이클립스&lt;/em&gt; 를 통해 Java 코딩을 주로 했으나 최근에 (2018.8월 이후) IntelliJ 학생인증을 받아 학생 라이센스로 &lt;em&gt;IntelliJ&lt;/em&gt; 를 사용해보고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;자바의 객체지향언어적 특징에 대해 이해하고 있으며 이를 활용해 Override, Overload (다형성 구현)을 적용할 수 있으며 extends와 implements의 차이점을 알고 상황에 맞게 적절히 구현할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;자바의 Collection 프레임워크에 대해 이해하고 있으며 이를 상황에 맞게 적절히 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;※ Collection 프레임워크?&lt;/p&gt;
+
+&lt;p&gt;Java에서 다수의 데이터를 효과적으로 제어하기 위해 표준화된 방법을 제공하는 객체의 집합입니다. List, Map, Set 등이 대표적인 예입니다.&lt;/p&gt;
+
+&lt;p&gt;또한, JDBC를 활용하여 DataSource 객체를 받은 후 Connection을 얻어내 DB와 연결할 수 있습니다. 이와 더불어PreparedStatement와 ResultSet 객체의 조작이 가능합니다.&lt;/p&gt;
+
+&lt;p&gt;try-catch-finally를 활용하여 예외 처리를 할 수 있습니다.
+또한 Java 7에서 새롭게 등장한 try-with-resource 기능을 활용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;가장 오랫동안 사용하여 익숙한 언어이기 때문에 알고리즘 문제를 풀 때 주로 자바를 활용하고 있습니다. &lt;a href=&quot;https://github.com/pkch93/Algorithm&quot;&gt;자바 알고리즘 풀이저장소 보기 &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;그외에 제네릭, enum 타입 등을 이해하고 있습니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;java-8&quot;&gt;Java 8&lt;/h2&gt;
 
+&lt;p&gt;Java에서 가장 혁신적인 변화가 일어난 8 버전을 이해하고 실제 코딩으로 적용해보려고 노력하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;Java 8의 가장 큰 특징은 함수형 언어가 가지고 있는 Lambda식을 Java에서 적용할 수 있다는 점과 Stream API 일 것입니다. 저는 FunctionalInterface를 통해 Lambda식을 적용하는 방법과 Collection 객체에서 Stream을 사용하는 방법에 큰 관심을 가지고 학습, 적용하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;또한 자바 8의 메소드 레퍼런스, Optional&amp;lt;E&amp;gt;도 함께 학습하고 주로 사용하고 있습니다.&lt;/p&gt;
+
 &lt;h2 id=&quot;jsp--servlet&quot;&gt;JSP &amp;amp; Servlet&lt;/h2&gt;
 
-&lt;h2 id=&quot;junit4&quot;&gt;JUnit4&lt;/h2&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Java</summary></entry><entry><title type="html">DB</title><link href="http://localhost:4000/tech_stack/2018/10/29/DB/" rel="alternate" type="text/html" title="DB" /><published>2018-10-29T13:29:00+09:00</published><updated>2018-10-29T13:29:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/DB</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/DB/">&lt;h2 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h2&gt;
+&lt;p&gt;Servlet은 Java EE에서 주로 웹페이지를 생성하기 위해 사용되는 Java 클래스입니다. 저는 Servlet의 생명주기 (init -&amp;gt; Service -&amp;gt; Destroy)를 이해하고 있으며 JSP의 탄생배경을 이해하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;또한 JSP에서 자바코드를 사용하게 해주는 스크립트릿(&amp;lt;% … %&amp;gt;)과 표현식(&amp;lt;%= … %&amp;gt;), 선언식 (&amp;lt;%@ … %&amp;gt;)등을 이해하고 있으며 JSTL을 JSP와 함께 활용할 수 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;junit4&quot;&gt;JUnit4&lt;/h2&gt;
+
+&lt;p&gt;견고한 어플리케이션을 위해서는 단위 테스트를 활용하는 것이 중요합니다.&lt;/p&gt;
+
+&lt;p&gt;JUnit의 실행 절차를 알고 assert static 메소드와 함께 데이터 테스트 등을 구현할 수 있습니다.&lt;/p&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">자바는 제가 컴퓨터공학에 처음 입문했을 때부터 다뤘던 프로그래밍 언어입니다. (2016.09월부터 사용)</summary></entry><entry><title type="html">DB</title><link href="http://localhost:4000/tech_stack/2018/10/29/DB/" rel="alternate" type="text/html" title="DB" /><published>2018-10-29T13:29:00+09:00</published><updated>2018-10-29T13:29:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/DB</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/DB/">&lt;p&gt;데이터베이스 수업을 통해 SQL과 DBMS에 대하여 교육받았습니다.&lt;/p&gt;
+
+&lt;p&gt;처음 접한 DB는 Oracle 11g (수업을 통해 처음 입문)이나 세계적으로 많이 쓰이는 MySQL을 잘 다뤄보고 싶어 공부하고 실제로 사용해보았습니다.&lt;/p&gt;
+
+&lt;p&gt;데이터베이스를 사용할 때 주로 SQL을 다루는 RDB(관계형 데이터베이스)를 사용합니다. 대부분 MySQL을 사용하였으며 Postgresql은 최근에 관심을 가지게 되어 학습하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;SQL로는 DDL을 활용하여 테이블 생성 및 수정, 삭제 할 수 있으며 CONSTRAINT로 제약사항을 스키마에 넣을 수 있습니다. 또한 DML로 데이터 CRUD와 간단한 JOIN을 구현할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;SQL과 관련한 자격증으로 SQLD를 취득했습니다. (한국데이터진흥원 주관, 2017.12.29 취득)&lt;/p&gt;
+
+&lt;p&gt;이밖에 최근에 NoSQL 진영에서 각광받는 MongoDB에도 큰 관심을 가지고 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h2&gt;
+
+&lt;p&gt;제가 다룰 줄 아는 RDB로 MySQL과 Postgresql이 있습니다. 실질적으로 Postgresql는 학습만 했기 때문에 프로젝트에서는 MySQL을 주로 사용했습니다.&lt;/p&gt;
 
 &lt;h3 id=&quot;mysql&quot;&gt;MySQL&lt;/h3&gt;
 
-&lt;h3 id=&quot;oracle-11g&quot;&gt;Oracle 11g&lt;/h3&gt;
+&lt;p&gt;MySQL로 DDL과 DML을 사용하여 스키마 조작 및 데이터 조회를 할 수 있습니다. 특히 JDBC와 연계하여 MySQL을 다뤄봤습니다.&lt;/p&gt;
 
-&lt;h3 id=&quot;postgresql&quot;&gt;Postgresql&lt;/h3&gt;
+&lt;p&gt;아래는 Spring에서 MySQL Driver를 로드하여 Application과 MySQL을 연결한 코드입니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;  &lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataSource&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dataSource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;DriverManagerDataSource&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DriverManagerDataSource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setDriverClassName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.mysql.cj.jdbc.Driver&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;jdbc:mysql://localhost:3306/ood?&quot;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SSLuse=false&amp;amp;serverTimezone=UTC&amp;amp;&quot;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;useUnicode=true&amp;amp;characterEncoding=utf8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;park&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setPassword&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1234&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;MySQL에 접속하기 위해 setUrl 메소드의 내용과 같이 url을 작성합니다. 이 때 제가 쓴 MySQL 버전이 8.0.11인데 MySQL 5.7 이상에서는 SSL을 적용해야 DB에 접근가능합니다. 따라서 개발시 SSL 제약사항을 없애기 위해 잠시 QueryString로 SSLuse=false 설정을 해주었습니다.&lt;/p&gt;
+
+&lt;p&gt;아래는 위와 같이 연결한 MySQL에 있는 데이터를 조작하기 위한 Mybatis Mapper xml 코드입니다. (account 정보 조작)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE mapper
+  PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;
+  &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;mapper&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;namespace=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.moviereserve.park.DAO.AccountDAO&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;insert&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;create&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  	INSERT INTO ACCOUNT VALUES
+  	(#{accountId}, #{accountPw}, #{accountName},
+  	#{phone}, #{address}, #{isAdmin})
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/insert&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;select&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;read&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;resultType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.moviereserve.park.DTO.Account&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  	SELECT * FROM ACCOUNT WHERE ACCOUNTID = #{accountId}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;delete&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;delete&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  	DELETE FROM ACCOUNT WHERE ACCOUNTID = #{accountId}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/delete&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;select&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;login&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;resultType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;com.moviereserve.park.DTO.Account&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  	SELECT * FROM ACCOUNT WHERE ACCOUNTID = #{accountId} and ACCOUNTPW = #{accountPw}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mapper&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;위와 같이 SQL을 사용하여 가입, 조회, 로그인, 탈퇴를 구현할 수 있습니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;nosql&quot;&gt;NoSQL&lt;/h2&gt;
 
-&lt;h3 id=&quot;mongodb&quot;&gt;MongoDB&lt;/h3&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">RDBMS</summary></entry><entry><title type="html">React</title><link href="http://localhost:4000/tech_stack/2018/10/29/react/" rel="alternate" type="text/html" title="React" /><published>2018-10-29T13:04:12+09:00</published><updated>2018-10-29T13:04:12+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/react</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/react/">&lt;h2 id=&quot;redux&quot;&gt;Redux&lt;/h2&gt;
+&lt;h3 id=&quot;mongodb&quot;&gt;MongoDB&lt;/h3&gt;
+
+&lt;p&gt;저는 MongoDB의 Collection, Document, SubDocument에 대해 이해하고 있습니다. 이를 통해 MongoDB로 Document를 만들 수 있습니다. 또한 MongoDB에서 제공하는 다양한 쿼리함수를 활용하여 데이터를 조작할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;Node.js에서 MongoDB를 활용하기 좋은 환경을 제공하므로 (mongoose API를 활용) 현재 Node.js의 Koa와 함께 MongoDB를 다뤄보고 있습니다.&lt;/p&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">데이터베이스 수업을 통해 SQL과 DBMS에 대하여 교육받았습니다.</summary></entry><entry><title type="html">React</title><link href="http://localhost:4000/tech_stack/2018/10/29/react/" rel="alternate" type="text/html" title="React" /><published>2018-10-29T13:04:12+09:00</published><updated>2018-10-29T13:04:12+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/react</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/react/">&lt;h2 id=&quot;redux&quot;&gt;Redux&lt;/h2&gt;
 
 &lt;h2 id=&quot;react-router&quot;&gt;React-Router&lt;/h2&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Redux</summary></entry><entry><title type="html">node.js</title><link href="http://localhost:4000/tech_stack/2018/10/29/nodejs/" rel="alternate" type="text/html" title="node.js" /><published>2018-10-29T13:00:01+09:00</published><updated>2018-10-29T13:00:01+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/nodejs</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/nodejs/">&lt;h2 id=&quot;koa&quot;&gt;Koa&lt;/h2&gt;
 
