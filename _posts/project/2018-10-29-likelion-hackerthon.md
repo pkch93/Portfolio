@@ -3,6 +3,7 @@ layout: post
 title: "멋쟁이사자처럼 해커톤"
 date: 2018-10-29 11:36:30 +0900
 category: project
+period: 2018.07.14~2018.08.24
 description: 피드백을 받아보기 어려운 강사들을 위한 서비스 개발
 more_details: ["ruby", "rails", "jquery"]
 ---
@@ -41,7 +42,15 @@ html5 & css3 & javascript & jquery | ruby on rails | SQLite
 
   devise gem을 쓰지 않고 session을 사용하여 직접 구현하였습니다.
 
-  먼저
+  회원의 아이디는 lec_id라는 이름으로, 비밀번호는 lec_pw로 받아 검증합니다.
+
+  만약 아이디가 없거나, 있더라도 비밀번호가 다른 경우 *flash attribute* 를 활용하여 "아이디 또는 비밀번호가 일치하지 않습니다"라는 경고 메세지를 login 창에 띄워줍니다.
+
+  그렇지 않다면 session에 id라는 key안에 회원의 아이디를 넣어 로그인을 구현합니다.
+
+  로그인 완료시 홈 화면으로 돌아갑니다.
+
+  아래는 로그인을 구현한 코드입니다.
 
   {% highlight ruby linenos %}
   def logincheck
@@ -58,8 +67,40 @@ html5 & css3 & javascript & jquery | ruby on rails | SQLite
   end
   {% endhighlight %}
 
+  로그아웃은 단순히 해당 회원이 접속한 브라우저의 session[:id] 값을 null로 만들어 구현하였습니다.
+
+  로그아웃 이후에는 홈 화면으로 넘어갑니다.
+
+  {% highlight ruby linenos %}
+  def logout
+    session[:id] = nil
+    @current_user = nil
+    redirect_to '/'
+  end
+  {% endhighlight %}
+
 ### 회원가입
 
+  {% highlight ruby linenos %}
+  def create
+    @lecturer = Lecturer.new(lecturer_params)
+    @lecturer.phone = params[:phone1] + params[:phone2] + params[:phone3]
+    @lecturer.email = params[:email] + "@" + params[:email_domain]
+    lecturer_categories = params.require(:lecturer_categories).permit(:category)
+    respond_to do |format|
+      if @lecturer.save
+        lecturer_categories[:category].split(",").each do |ctg|
+          LecturerCategory.new(lecturer_id: @lecturer.id, category: ctg).save
+        end
+        format.html { redirect_to @lecturer, notice: 'Lecturer was successfully created.' }
+        format.json { render :show, status: :created, location: @lecturer }
+      else
+        format.html { render :new }
+        format.json { render json: @lecturer.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  {% endhighlight %}
 ### 회원 정보 수정
 
 ### 회원 탈퇴
@@ -73,3 +114,5 @@ html5 & css3 & javascript & jquery | ruby on rails | SQLite
 ### 강사 검색
 
 ### 강연 목록 보기
+
+## 시연 화면

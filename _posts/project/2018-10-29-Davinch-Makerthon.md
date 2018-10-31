@@ -4,6 +4,7 @@ title: "다빈치 SW 메이커 페스티벌"
 date: 2018-10-29 14:00:00 +0900
 category: project
 isprogress: true
+period: 2018.10.22~2018.11.03
 description: 공공데이터를 활용한 청년 취·창업 정보제공 및 홍보 서비스 개발
 more_details: ["js", "node", "react", "sass", "git"]
 ---

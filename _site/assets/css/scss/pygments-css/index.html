@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8"/>
-  <title>Spring - pkch's Portfolio</title>
+  <title>pygments-css - pkch's Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -50,7 +50,7 @@
         
           
             <li class="category">
-              <a class=" active " href="/category/tech_stack/">tech stack</a>
+              <a class="" href="/category/tech_stack/">tech stack</a>
             </li>
           
         
@@ -96,24 +96,39 @@
 </nav>
 
     <div class="container
-      
-        container__post
       ">
-      <div class="contents">
-  <h1>Spring</h1>
-  <h2 id="spring-mvc">Spring MVC</h2>
+      <article class="post">
 
-<h2 id="spring-security">Spring Security</h2>
+  <header class="post-header">
+    <h1 class="post-title">pygments-css</h1>
+  </header>
 
-<h2 id="spring-data">Spring Data</h2>
+  <div class="post-content">
+    <h1 id="pygments-css">pygments-css</h1>
 
-<h3 id="spring-jdbc">Spring JDBC</h3>
+<p><a href="http://pygments.org">Pygments</a>, a Python-based code highlighting tool, comes with a set of builtin styles (not css files) for code highlighting. You have to generate a CSS file using the command line.</p>
 
-<h3 id="mybatis">Mybatis</h3>
+<p>You can generate these yourself, but this git repository has already generated them for you.</p>
 
-<h3 id="jpa--hibernate">JPA &amp; Hibernate</h3>
+<h2 id="build">build</h2>
 
-</div>
+<p>These css files were generated using pygmentize on the command line like so::</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pygmentize -S default -f html -a .highlight &gt; default.css
+</code></pre></div></div>
+
+<p>You can remove or change the top-level class by removing or modifying <code class="highlighter-rouge">-a .highlight</code> in the <code class="highlighter-rouge">makefile</code>.</p>
+
+<p>To regenerate them all with whichever <code class="highlighter-rouge">pygments</code> version you are using, run</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;this repo&gt;
+cd pygments-css
+make cssfiles
+</code></pre></div></div>
+
+  </div>
+
+</article>
 
     </div>
   </div>

@@ -17,7 +17,9 @@ layout: default
             </p>
           {% endif %}
         <p>
-          {{post.date | date: "%B %d, %Y"}}
+          {% if post.period %}
+            기간 : {{post.period}}
+          {% endif %}
           <span class="stack">
             {% if page.category == "project" %}
               technical stack :
@@ -61,6 +63,25 @@ layout: default
     {% endfor %}
     </ul>
   <h2 class="subtitle">수상경력 / Prize</h2>
+    <ul class="cards">
+      {% for prize in site.data.profile.prize %}
+        <li class="card">
+          <h3>{{prize.title}} {{prize.name}}</h3>
+          <p>{{prize.description}}</p>
+          <p>주관처 : {{prize.host}} | 수상일 : {{prize.date}}</p>
+        </li>
+      {% endfor %}
+    </ul>
   <h2 class="subtitle">활동사항 / Activities</h2>
+    <ul class="cards">
+      {% for act in site.data.profile.activities %}
+        <li class="card">
+          <h3>{{act.name}}</h3>
+          <p>{{act.details}}</p>
+          <p>활동유형 : {{act.type}} | 활동기간 : {{act.period}}</p>
+          <a class="activity_result" href="{{act.url}}">{{act.name}} 활동 결과물 보기</a>
+        </li>
+      {% endfor %}
+    </ul>
 </div>
 {% endif %}

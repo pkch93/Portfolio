@@ -58,6 +58,8 @@
         
           
         
+          
+        
     </ul>
   </div>
   <div class="contact">
@@ -161,7 +163,15 @@
 
 <p>devise gem을 쓰지 않고 session을 사용하여 직접 구현하였습니다.</p>
 
-<p>먼저</p>
+<p>회원의 아이디는 lec_id라는 이름으로, 비밀번호는 lec_pw로 받아 검증합니다.</p>
+
+<p>만약 아이디가 없거나, 있더라도 비밀번호가 다른 경우 <em>flash attribute</em> 를 활용하여 “아이디 또는 비밀번호가 일치하지 않습니다”라는 경고 메세지를 login 창에 띄워줍니다.</p>
+
+<p>그렇지 않다면 session에 id라는 key안에 회원의 아이디를 넣어 로그인을 구현합니다.</p>
+
+<p>로그인 완료시 홈 화면으로 돌아갑니다.</p>
+
+<p>아래는 로그인을 구현한 코드입니다.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -190,7 +200,63 @@
   <span class="k">end</span>
   </pre></td></tr></tbody></table></code></pre></figure>
 
+<p>로그아웃은 단순히 해당 회원이 접속한 브라우저의 session[:id] 값을 null로 만들어 구현하였습니다.</p>
+
+<p>로그아웃 이후에는 홈 화면으로 넘어갑니다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="k">def</span> <span class="nf">logout</span>
+    <span class="n">session</span><span class="p">[</span><span class="ss">:id</span><span class="p">]</span> <span class="o">=</span> <span class="kp">nil</span>
+    <span class="vi">@current_user</span> <span class="o">=</span> <span class="kp">nil</span>
+    <span class="n">redirect_to</span> <span class="s1">'/'</span>
+  <span class="k">end</span>
+  </pre></td></tr></tbody></table></code></pre></figure>
+
 <h3 id="회원가입">회원가입</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre>  <span class="k">def</span> <span class="nf">create</span>
+    <span class="vi">@lecturer</span> <span class="o">=</span> <span class="no">Lecturer</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">lecturer_params</span><span class="p">)</span>
+    <span class="vi">@lecturer</span><span class="p">.</span><span class="nf">phone</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:phone1</span><span class="p">]</span> <span class="o">+</span> <span class="n">params</span><span class="p">[</span><span class="ss">:phone2</span><span class="p">]</span> <span class="o">+</span> <span class="n">params</span><span class="p">[</span><span class="ss">:phone3</span><span class="p">]</span>
+    <span class="vi">@lecturer</span><span class="p">.</span><span class="nf">email</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:email</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"@"</span> <span class="o">+</span> <span class="n">params</span><span class="p">[</span><span class="ss">:email_domain</span><span class="p">]</span>
+    <span class="n">lecturer_categories</span> <span class="o">=</span> <span class="n">params</span><span class="p">.</span><span class="nf">require</span><span class="p">(</span><span class="ss">:lecturer_categories</span><span class="p">).</span><span class="nf">permit</span><span class="p">(</span><span class="ss">:category</span><span class="p">)</span>
+    <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+      <span class="k">if</span> <span class="vi">@lecturer</span><span class="p">.</span><span class="nf">save</span>
+        <span class="n">lecturer_categories</span><span class="p">[</span><span class="ss">:category</span><span class="p">].</span><span class="nf">split</span><span class="p">(</span><span class="s2">","</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">ctg</span><span class="o">|</span>
+          <span class="no">LecturerCategory</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">lecturer_id: </span><span class="vi">@lecturer</span><span class="p">.</span><span class="nf">id</span><span class="p">,</span> <span class="ss">category: </span><span class="n">ctg</span><span class="p">).</span><span class="nf">save</span>
+        <span class="k">end</span>
+        <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="p">{</span> <span class="n">redirect_to</span> <span class="vi">@lecturer</span><span class="p">,</span> <span class="ss">notice: </span><span class="s1">'Lecturer was successfully created.'</span> <span class="p">}</span>
+        <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">:show</span><span class="p">,</span> <span class="ss">status: :created</span><span class="p">,</span> <span class="ss">location: </span><span class="vi">@lecturer</span> <span class="p">}</span>
+      <span class="k">else</span>
+        <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">:new</span> <span class="p">}</span>
+        <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@lecturer</span><span class="p">.</span><span class="nf">errors</span><span class="p">,</span> <span class="ss">status: :unprocessable_entity</span> <span class="p">}</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  </pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="회원-정보-수정">회원 정보 수정</h3>
 
@@ -205,6 +271,8 @@
 <h3 id="강사-검색">강사 검색</h3>
 
 <h3 id="강연-목록-보기">강연 목록 보기</h3>
+
+<h2 id="시연-화면">시연 화면</h2>
 
 </div>
 

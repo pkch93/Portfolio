@@ -27,6 +27,11 @@ certificate:
     host: 한국데이터진흥원
 
 prize:
+  - name: 인기상
+    title: 소셜임팩트해커톤
+    host: (재)강원창조경제혁신센터
+    date: 2018.06.09
+    description: 강원도 도민이 키운 농산물을 중개하여 판매하는 플랫폼
 
 activities:
   - name: 다빈치 SW 메이커 페스티벌
