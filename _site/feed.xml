@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-30T13:26:17+09:00</updated><id>http://localhost:4000/</id><title type="html">pkch’s Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">다빈치 SW 메이커 페스티벌 (진행중)</title><link href="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/" rel="alternate" type="text/html" title="다빈치 SW 메이커 페스티벌 (진행중)" /><published>2018-10-29T14:00:00+09:00</published><updated>2018-10-29T14:00:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Davinch-Makerthon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/">&lt;h1 id=&quot;다빈치-sw-메이커-페스티벌&quot;&gt;다빈치 SW 메이커 페스티벌&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T19:36:57+09:00</updated><id>http://localhost:4000/</id><title type="html">pkch’s Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">다빈치 SW 메이커 페스티벌</title><link href="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/" rel="alternate" type="text/html" title="다빈치 SW 메이커 페스티벌" /><published>2018-10-29T14:00:00+09:00</published><updated>2018-10-29T14:00:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Davinch-Makerthon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Davinch-Makerthon/">&lt;p&gt;다빈치 SW 메이커 페스티벌 &amp;lt;청춘어람&amp;gt; (by 멋쟁이청년처럼)&lt;/p&gt;
 
-&lt;p&gt;다빈치 SW 메이커 페스티벌 &amp;lt;청춘어람&amp;gt; (by 멋쟁이청년처럼)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;주제 : 공공데이터와 공간정보를 이용한 세상을 이롭게 하는 서비스
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;주제 : 공공데이터와 공간정보를 이용한 세상을 이롭게 하는 서비스&lt;/p&gt;
 
 &lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
 
@@ -47,39 +44,159 @@
 
 &lt;h3 id=&quot;작품-소개&quot;&gt;작품 소개&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;취업 준비생 청년 정책으로 대전시에는 월 30만원 지원해주는 ‘청년희망카드’라는 것이 있고 부산시에는 ‘청년디딤돌카드’라는 것이 있습니다.
+&lt;p&gt;취업 준비생 청년 정책으로 대전시에는 월 30만원 지원해주는 ‘청년희망카드’라는 것이 있고 부산시에는 ‘청년디딤돌카드’라는 것이 있습니다.&lt;/p&gt;
 
-또 이런 경제적인 지원 뿐만 아니라 각 시에서 제공하는 주택 지원이나 창업 또는 일자리 지원들이 많습니다.
+&lt;p&gt;또 이런 경제적인 지원 뿐만 아니라 각 시에서 제공하는 주택 지원이나 창업 또는 일자리 지원들이 많습니다.&lt;/p&gt;
 
-정부 및 지차체에서 제공하는 질 좋은 강연이나 정책들이 많음에도 불구하고 잘 몰라서 혜택을 받지 못하는 청년들이 많습니다.
+&lt;p&gt;정부 및 지차체에서 제공하는 질 좋은 강연이나 정책들이 많음에도 불구하고 잘 몰라서 혜택을 받지 못하는 청년들이 많습니다.&lt;/p&gt;
 
-이에 ‘청년 취업 정책 API’와 ‘청년 창업 정책 API’ 등 공공데이터를 사용하여 청년정책모음 사이트를 구현하여 청년 간 정보 격차를 줄이고 정부의 청년 정책을 홍보하고자 합니다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;개발-배경&quot;&gt;개발 배경&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;얼마 전, 한 학생의 정보공유를 통해 대전시에서 지원하는 ‘청년 희망 카드’라는 청년 지원 정책을 알게 되었습니다.
-
-해당 정보를 접한 우리들은, 지원 정책의 자격 요건인 ‘주민등록상 대전시 시민’이라는 자격 요건에 해당되지 못했기 때문에 혜택을 받지 못했습니다.
-
-후에 알아보니 다른 시에서도 이미 청년들을 위한 지원 정책을 많이 진행 중에 있음을 알았습니다.
-
-정부나 시, 도에서 지원하는 좋은 청년 정책이 많습니다. 그러나 정보의 접근성이 떨어져 과거의 우리같이 지원 자격에 부합하나 혜택을 받지 못하는 청년들이 많습니다.
-
-따라서 저희는 본 사이트를 통해 청년들이 정부 및 지자체가 제공하는 청년 정책 정보에 대한 접근성을 높이고 취˙창업에 대한 지원 정책을 홍보하고자 합니다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;기대효과&quot;&gt;기대효과&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;정부정책을 많은 청년들에게 알 수 있도록 홍보효과가 있을 것으로 기대합니다.
-
-취업을 준비하는 청년들에게는 정책을 지원받아 경제적 부담 없이 구직활동에 전념할 수 있도록 만들어줄 것입니다.
-
-또한 창업을 준비하는 청년들에게는 다양한 지원책을 알게 해주어 아이디어 구현에 힘을 실어줄 것으로 기대하고 있습니다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;이에 ‘청년 취업 정책 API’와 ‘청년 창업 정책 API’ 등 공공데이터를 사용하여 청년정책모음 사이트를 구현하여 청년 간 정보 격차를 줄이고 정부의 청년 정책을 홍보하고자 합니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;기능&quot;&gt;기능&lt;/h2&gt;
 
 &lt;h2 id=&quot;db-설계&quot;&gt;DB 설계&lt;/h2&gt;
 
-&lt;h2 id=&quot;ui-설계&quot;&gt;UI 설계&lt;/h2&gt;</content><author><name></name></author><category term="project" /><summary type="html">다빈치 SW 메이커 페스티벌</summary></entry><entry><title type="html">Spring</title><link href="http://localhost:4000/tech_stack/2018/10/29/spring/" rel="alternate" type="text/html" title="Spring" /><published>2018-10-29T13:43:00+09:00</published><updated>2018-10-29T13:43:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/spring</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/spring/">&lt;h1 id=&quot;spring&quot;&gt;Spring&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Spring</summary></entry><entry><title type="html">Collathon</title><link href="http://localhost:4000/project/2018/10/29/Collathon/" rel="alternate" type="text/html" title="Collathon" /><published>2018-10-29T13:40:00+09:00</published><updated>2018-10-29T13:40:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Collathon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Collathon/">&lt;h1 id=&quot;collathon&quot;&gt;Collathon&lt;/h1&gt;</content><author><name></name></author><category term="project" /><summary type="html">Collathon</summary></entry><entry><title type="html">Java</title><link href="http://localhost:4000/tech_stack/2018/10/29/java/" rel="alternate" type="text/html" title="Java" /><published>2018-10-29T13:31:00+09:00</published><updated>2018-10-29T13:31:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/java</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/java/">&lt;h1 id=&quot;java&quot;&gt;Java&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Java</summary></entry><entry><title type="html">DB</title><link href="http://localhost:4000/tech_stack/2018/10/29/DB/" rel="alternate" type="text/html" title="DB" /><published>2018-10-29T13:29:00+09:00</published><updated>2018-10-29T13:29:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/DB</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/DB/">&lt;h1 id=&quot;db&quot;&gt;DB&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">DB</summary></entry><entry><title type="html">React</title><link href="http://localhost:4000/tech_stack/2018/10/29/react/" rel="alternate" type="text/html" title="React" /><published>2018-10-29T13:04:12+09:00</published><updated>2018-10-29T13:04:12+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/react</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/react/">&lt;h1 id=&quot;reactjs&quot;&gt;React.js&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">React.js</summary></entry><entry><title type="html">node.js</title><link href="http://localhost:4000/tech_stack/2018/10/29/nodejs/" rel="alternate" type="text/html" title="node.js" /><published>2018-10-29T13:00:01+09:00</published><updated>2018-10-29T13:00:01+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/nodejs</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/nodejs/">&lt;h1 id=&quot;nodejs&quot;&gt;Node.js&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Node.js</summary></entry><entry><title type="html">ruby on rails</title><link href="http://localhost:4000/tech_stack/2018/10/29/ruby-on-rails/" rel="alternate" type="text/html" title="ruby on rails" /><published>2018-10-29T13:00:00+09:00</published><updated>2018-10-29T13:00:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/ruby-on-rails</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/ruby-on-rails/">&lt;h1 id=&quot;ruby-on-rails&quot;&gt;ruby on rails&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">ruby on rails</summary></entry><entry><title type="html">Web Standard</title><link href="http://localhost:4000/tech_stack/2018/10/29/web-standard/" rel="alternate" type="text/html" title="Web Standard" /><published>2018-10-29T12:58:00+09:00</published><updated>2018-10-29T12:58:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/web-standard</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/web-standard/">&lt;h1 id=&quot;web-standard&quot;&gt;Web Standard&lt;/h1&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Web Standard</summary></entry><entry><title type="html">멋쟁이사자처럼 해커톤</title><link href="http://localhost:4000/project/2018/10/29/likelion-hackerthon/" rel="alternate" type="text/html" title="멋쟁이사자처럼 해커톤" /><published>2018-10-29T11:36:30+09:00</published><updated>2018-10-29T11:36:30+09:00</updated><id>http://localhost:4000/project/2018/10/29/likelion-hackerthon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/likelion-hackerthon/">&lt;h1 id=&quot;멋쟁이사자처럼-해커톤&quot;&gt;멋쟁이사자처럼 해커톤&lt;/h1&gt;</content><author><name></name></author><category term="project" /><summary type="html">멋쟁이사자처럼 해커톤</summary></entry></feed>
+&lt;h2 id=&quot;ui-설계&quot;&gt;UI 설계&lt;/h2&gt;</content><author><name></name></author><category term="project" /><summary type="html">다빈치 SW 메이커 페스티벌 &amp;lt;청춘어람&amp;gt; (by 멋쟁이청년처럼)</summary></entry><entry><title type="html">Spring</title><link href="http://localhost:4000/tech_stack/2018/10/29/spring/" rel="alternate" type="text/html" title="Spring" /><published>2018-10-29T13:43:00+09:00</published><updated>2018-10-29T13:43:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/spring</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/spring/">&lt;h2 id=&quot;spring-mvc&quot;&gt;Spring MVC&lt;/h2&gt;
+
+&lt;h2 id=&quot;spring-security&quot;&gt;Spring Security&lt;/h2&gt;
+
+&lt;h2 id=&quot;spring-data&quot;&gt;Spring Data&lt;/h2&gt;
+
+&lt;h3 id=&quot;spring-jdbc&quot;&gt;Spring JDBC&lt;/h3&gt;
+
+&lt;h3 id=&quot;mybatis&quot;&gt;Mybatis&lt;/h3&gt;
+
+&lt;h3 id=&quot;jpa--hibernate&quot;&gt;JPA &amp;amp; Hibernate&lt;/h3&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Spring MVC</summary></entry><entry><title type="html">Collathon</title><link href="http://localhost:4000/project/2018/10/29/Collathon/" rel="alternate" type="text/html" title="Collathon" /><published>2018-10-29T13:40:00+09:00</published><updated>2018-10-29T13:40:00+09:00</updated><id>http://localhost:4000/project/2018/10/29/Collathon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/Collathon/"></content><author><name></name></author><category term="project" /><summary type="html"></summary></entry><entry><title type="html">Java</title><link href="http://localhost:4000/tech_stack/2018/10/29/java/" rel="alternate" type="text/html" title="Java" /><published>2018-10-29T13:31:00+09:00</published><updated>2018-10-29T13:31:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/java</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/java/">&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
+
+&lt;h2 id=&quot;java-8&quot;&gt;Java 8&lt;/h2&gt;
+
+&lt;h2 id=&quot;jsp--servlet&quot;&gt;JSP &amp;amp; Servlet&lt;/h2&gt;
+
+&lt;h2 id=&quot;junit4&quot;&gt;JUnit4&lt;/h2&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Java</summary></entry><entry><title type="html">DB</title><link href="http://localhost:4000/tech_stack/2018/10/29/DB/" rel="alternate" type="text/html" title="DB" /><published>2018-10-29T13:29:00+09:00</published><updated>2018-10-29T13:29:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/DB</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/DB/">&lt;h2 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h2&gt;
+
+&lt;h3 id=&quot;mysql&quot;&gt;MySQL&lt;/h3&gt;
+
+&lt;h3 id=&quot;oracle-11g&quot;&gt;Oracle 11g&lt;/h3&gt;
+
+&lt;h3 id=&quot;postgresql&quot;&gt;Postgresql&lt;/h3&gt;
+
+&lt;h2 id=&quot;nosql&quot;&gt;NoSQL&lt;/h2&gt;
+
+&lt;h3 id=&quot;mongodb&quot;&gt;MongoDB&lt;/h3&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">RDBMS</summary></entry><entry><title type="html">React</title><link href="http://localhost:4000/tech_stack/2018/10/29/react/" rel="alternate" type="text/html" title="React" /><published>2018-10-29T13:04:12+09:00</published><updated>2018-10-29T13:04:12+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/react</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/react/">&lt;h2 id=&quot;redux&quot;&gt;Redux&lt;/h2&gt;
+
+&lt;h2 id=&quot;react-router&quot;&gt;React-Router&lt;/h2&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Redux</summary></entry><entry><title type="html">node.js</title><link href="http://localhost:4000/tech_stack/2018/10/29/nodejs/" rel="alternate" type="text/html" title="node.js" /><published>2018-10-29T13:00:01+09:00</published><updated>2018-10-29T13:00:01+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/nodejs</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/nodejs/">&lt;h2 id=&quot;koa&quot;&gt;Koa&lt;/h2&gt;
+
+&lt;h2 id=&quot;npm&quot;&gt;npm&lt;/h2&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">Koa</summary></entry><entry><title type="html">ruby on rails</title><link href="http://localhost:4000/tech_stack/2018/10/29/ruby-on-rails/" rel="alternate" type="text/html" title="ruby on rails" /><published>2018-10-29T13:00:00+09:00</published><updated>2018-10-29T13:00:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/ruby-on-rails</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/ruby-on-rails/"></content><author><name></name></author><category term="tech_stack" /><summary type="html"></summary></entry><entry><title type="html">Web Standard</title><link href="http://localhost:4000/tech_stack/2018/10/29/web-standard/" rel="alternate" type="text/html" title="Web Standard" /><published>2018-10-29T12:58:00+09:00</published><updated>2018-10-29T12:58:00+09:00</updated><id>http://localhost:4000/tech_stack/2018/10/29/web-standard</id><content type="html" xml:base="http://localhost:4000/tech_stack/2018/10/29/web-standard/">&lt;h2 id=&quot;html5&quot;&gt;HTML5&lt;/h2&gt;
+
+&lt;h2 id=&quot;css3&quot;&gt;CSS3&lt;/h2&gt;
+
+&lt;h2 id=&quot;javascript&quot;&gt;Javascript&lt;/h2&gt;
+
+&lt;h3 id=&quot;es6&quot;&gt;ES6&lt;/h3&gt;
+
+&lt;h3 id=&quot;jquery&quot;&gt;jQuery&lt;/h3&gt;</content><author><name></name></author><category term="tech_stack" /><summary type="html">HTML5</summary></entry><entry><title type="html">멋쟁이사자처럼 해커톤</title><link href="http://localhost:4000/project/2018/10/29/likelion-hackerthon/" rel="alternate" type="text/html" title="멋쟁이사자처럼 해커톤" /><published>2018-10-29T11:36:30+09:00</published><updated>2018-10-29T11:36:30+09:00</updated><id>http://localhost:4000/project/2018/10/29/likelion-hackerthon</id><content type="html" xml:base="http://localhost:4000/project/2018/10/29/likelion-hackerthon/">&lt;p&gt;멋쟁이사자처럼 해커톤 프로젝트 &lt;strong&gt;궁금한 강사&lt;/strong&gt; by &amp;lt;!DOCTYPE&amp;gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;front-end&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;back-end&lt;/th&gt;
+      &lt;th&gt;DB&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;html5 &amp;amp; css3 &amp;amp; javascript &amp;amp; jquery&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ruby on rails&lt;/td&gt;
+      &lt;td&gt;SQLite&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;member&quot;&gt;Member&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;이세록&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;박경철&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;김유리&lt;/th&gt;
+      &lt;th&gt;이동혁&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;기획 &amp;amp; front-end&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;개발 총괄 (front-end &amp;amp; back-end)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;UI Design &amp;amp; front-end&lt;/td&gt;
+      &lt;td&gt;back-end&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;개발-개요&quot;&gt;개발 개요&lt;/h2&gt;
+
+&lt;p&gt;일반적으로 강사들이 자신의 강의에 대한 피드백을 받아보기 어렵습니다.&lt;/p&gt;
+
+&lt;p&gt;일부 강사들은 피드백을 받기 위해서 아르바이트를 고용하면서까지 피드백을 받아보려 하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이런 강사들의 불편을 덜어주기 위한 아이디어로 ‘궁금한 강사’를 생각했습니다.&lt;/p&gt;
+
+&lt;p&gt;강사들이 강연 말미에 페이지 url 또는 QR코드를 관객에게 제공하여 관객들이 연령대, 배경지식과 같은 최소한의 정보만을 입력하여 리뷰를 작성하게하고 그 리뷰는 강사와 해당 강사의 강연을 궁금해하는 일반 사용자들이 참고할 수 있는 서비스를 생각하였습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;db-설계&quot;&gt;DB 설계&lt;/h2&gt;
+
+&lt;h2 id=&quot;구현-기능&quot;&gt;구현 기능&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;제가 구현한 기능 위주로 작성하였습니다.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;로그인-및-로그아웃&quot;&gt;로그인 및 로그아웃&lt;/h3&gt;
+
+&lt;p&gt;devise gem을 쓰지 않고 session을 사용하여 직접 구현하였습니다.&lt;/p&gt;
+
+&lt;p&gt;먼저&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;logincheck&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;lec_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:lec_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;lec_pw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:lec_pw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Lecturer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_by&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;lec_id: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lec_id&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;pw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lec_pw&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lec_id&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;아이디 또는 비밀번호가 일치하지 않습니다.&quot;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;login&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;회원가입&quot;&gt;회원가입&lt;/h3&gt;
+
+&lt;h3 id=&quot;회원-정보-수정&quot;&gt;회원 정보 수정&lt;/h3&gt;
+
+&lt;h3 id=&quot;회원-탈퇴&quot;&gt;회원 탈퇴&lt;/h3&gt;
+
+&lt;h3 id=&quot;아이디--비밀번호-찾기&quot;&gt;아이디 / 비밀번호 찾기&lt;/h3&gt;
+
+&lt;h3 id=&quot;강연-등록--수정--삭제&quot;&gt;강연 등록 &amp;amp; 수정 &amp;amp; 삭제&lt;/h3&gt;
+
+&lt;h3 id=&quot;리뷰-작성&quot;&gt;리뷰 작성&lt;/h3&gt;
+
+&lt;h3 id=&quot;강사-검색&quot;&gt;강사 검색&lt;/h3&gt;
+
+&lt;h3 id=&quot;강연-목록-보기&quot;&gt;강연 목록 보기&lt;/h3&gt;</content><author><name></name></author><category term="project" /><summary type="html">멋쟁이사자처럼 해커톤 프로젝트 궁금한 강사 by &amp;lt;!DOCTYPE&amp;gt;</summary></entry></feed>

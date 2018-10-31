@@ -9,6 +9,7 @@
   border-right: 1px solid $border-color;
   background: $sidebar-color;
   user-select: none;
+  z-index: 10;
   .profile{
     text-align: center;
     > a > img {

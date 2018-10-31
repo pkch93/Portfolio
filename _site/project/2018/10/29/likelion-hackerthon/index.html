@@ -93,9 +93,118 @@
   </div>
 </nav>
 
-    <div class="container">
+    <div class="container
+      
+        container__post
+      ">
       <div class="contents">
-  <h1 id="멋쟁이사자처럼-해커톤">멋쟁이사자처럼 해커톤</h1>
+  <h1>멋쟁이사자처럼 해커톤</h1>
+  <p>멋쟁이사자처럼 해커톤 프로젝트 <strong>궁금한 강사</strong> by &lt;!DOCTYPE&gt;</p>
+
+<h2 id="environment">Environment</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>front-end</th>
+      <th style="text-align: center">back-end</th>
+      <th>DB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>html5 &amp; css3 &amp; javascript &amp; jquery</td>
+      <td style="text-align: center">ruby on rails</td>
+      <td>SQLite</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="member">Member</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>이세록</th>
+      <th style="text-align: center">박경철</th>
+      <th style="text-align: center">김유리</th>
+      <th>이동혁</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>기획 &amp; front-end</td>
+      <td style="text-align: center">개발 총괄 (front-end &amp; back-end)</td>
+      <td style="text-align: center">UI Design &amp; front-end</td>
+      <td>back-end</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="개발-개요">개발 개요</h2>
+
+<p>일반적으로 강사들이 자신의 강의에 대한 피드백을 받아보기 어렵습니다.</p>
+
+<p>일부 강사들은 피드백을 받기 위해서 아르바이트를 고용하면서까지 피드백을 받아보려 하고 있습니다.</p>
+
+<p>이런 강사들의 불편을 덜어주기 위한 아이디어로 ‘궁금한 강사’를 생각했습니다.</p>
+
+<p>강사들이 강연 말미에 페이지 url 또는 QR코드를 관객에게 제공하여 관객들이 연령대, 배경지식과 같은 최소한의 정보만을 입력하여 리뷰를 작성하게하고 그 리뷰는 강사와 해당 강사의 강연을 궁금해하는 일반 사용자들이 참고할 수 있는 서비스를 생각하였습니다.</p>
+
+<h2 id="db-설계">DB 설계</h2>
+
+<h2 id="구현-기능">구현 기능</h2>
+
+<p><em>제가 구현한 기능 위주로 작성하였습니다.</em></p>
+
+<h3 id="로그인-및-로그아웃">로그인 및 로그아웃</h3>
+
+<p>devise gem을 쓰지 않고 session을 사용하여 직접 구현하였습니다.</p>
+
+<p>먼저</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre>  <span class="k">def</span> <span class="nf">logincheck</span>
+    <span class="n">lec_id</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:lec_id</span><span class="p">]</span>
+    <span class="n">lec_pw</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:lec_pw</span><span class="p">]</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="no">Lecturer</span><span class="p">.</span><span class="nf">find_by</span> <span class="ss">lec_id: </span><span class="n">lec_id</span>
+    <span class="k">if</span> <span class="n">temp</span> <span class="o">&amp;&amp;</span> <span class="n">temp</span><span class="p">.</span><span class="nf">pw</span> <span class="o">==</span> <span class="n">lec_pw</span>
+      <span class="n">session</span><span class="p">[</span><span class="ss">:id</span><span class="p">]</span> <span class="o">=</span> <span class="n">lec_id</span>
+      <span class="n">redirect_to</span> <span class="s1">'/'</span> <span class="n">and</span> <span class="k">return</span>
+    <span class="k">else</span>
+      <span class="n">flash</span><span class="p">[</span><span class="ss">:alert</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"아이디 또는 비밀번호가 일치하지 않습니다."</span>
+      <span class="n">render</span> <span class="s2">"login"</span> <span class="n">and</span> <span class="k">return</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  </pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="회원가입">회원가입</h3>
+
+<h3 id="회원-정보-수정">회원 정보 수정</h3>
+
+<h3 id="회원-탈퇴">회원 탈퇴</h3>
+
+<h3 id="아이디--비밀번호-찾기">아이디 / 비밀번호 찾기</h3>
+
+<h3 id="강연-등록--수정--삭제">강연 등록 &amp; 수정 &amp; 삭제</h3>
+
+<h3 id="리뷰-작성">리뷰 작성</h3>
+
+<h3 id="강사-검색">강사 검색</h3>
+
+<h3 id="강연-목록-보기">강연 목록 보기</h3>
 
 </div>
 

@@ -9,7 +9,7 @@ layout: default
     <a href="{{site.baseurl}}{{post.url}}">
       <li class="card">
           <h3>
-            {{post.title}}
+            {{post.title}}{% if post.isprogress %} (진행중){% endif %}
           </h3>
           {% if post.description %}
             <p>
