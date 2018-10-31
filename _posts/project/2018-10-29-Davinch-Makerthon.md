@@ -39,6 +39,4 @@ react.js & sass | Node.js & Koa | MongoDB
 
 ## 기능
 
-## DB 설계
-
-## UI 설계
+아직 진행중인 프로젝트입니다 ㅠㅠ 추후 업로드 하겠습니다!

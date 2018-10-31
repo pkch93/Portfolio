@@ -1,7 +1,8 @@
 .container__post{
   display: flex;
   justify-content: center;
-  .contents {
+  .contents{
+    margin: 20px 0 50px;
     h3 {
       padding-bottom: 10px;
       border-bottom: 1px solid #a9a9a9;
