@@ -55,7 +55,7 @@ let과 const를 이해하고 사용할 수 있습니다. (let은 중간에 값�
 
 arrow function으로 Javascript에서 lambda를 사용할 수 있습니다.
 
-Array를 다룰 때 ... (이름을 모르겠네요...), {} (destructuring, 비구조화)를 사용할 수 있습니다.
+Array를 다룰 때 ... (Spread Operator, 전개 연산자), {} (destructuring, 비구조화)를 사용할 수 있습니다.
 
 또한 비동기처리를 위한 Promise와 async/await (ES7)를 사용할 수 있습니다.
 
