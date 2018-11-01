@@ -102,15 +102,15 @@
   <h1>Spring</h1>
   <p>현재 Spring과 Spring boot를 이용하여 웹 애플리케이션을 만들 수 있습니다. Spring에서 제공하는 MVC 구조를 이해하며 이를 실제 적용할 수 있습니다.</p>
 
-<p>(참고 <a href=""></a>)</p>
-
 <h2 id="spring-학습이력">Spring 학습이력</h2>
 
 <p>2018년 01월부터 Spring에 큰 관심을 갖고 학습하였습니다. 주로 독학 및 인터넷 강의를 통해 지식을 학습하였습니다.</p>
 
 <p>먼저 Spring에 대한 입문용으로 Inflearn의 스프링 입문용 강의를 수강하였습니다. 이를 통해 Spring의 동작 원리, 라이프 사이클, 설정 방법(주로 xml 설정방법), 각종 디자인패턴(MVC. Strategy)를 학습하였습니다. ( <a href="https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%EA%B0%95%EC%A2%8C/">참고강의 </a>)</p>
 
-<p>강의를 통해 전체적인 개념은 알았지만 혼자서 활용해보기에는 아직 부족하였습니다. 이에 따라 Spring 공식 문서와 Spring in Action 책을 구매하여 부족한 개념을 채우는 데 보충하였습니다. 이를 통해 자바 설정, ContextLoader와 DispatcherServlet의 차이, 사진업로드를 위한 MultipartResolver 등록방법 등 알지 못했던 새로운 개념들을 익히고 기존에 알던 내용을 복습하는 계기가 되었습니다.</p>
+<p>강의를 통해 전체적인 개념은 알았지만 혼자서 활용해보기에는 아직 부족하였습니다.</p>
+
+<p>이에 따라 Spring 공식 문서와 Spring in Action 책을 구매하여 부족한 개념을 채우는 데 보충하였습니다. 이를 통해 자바 설정, ContextLoader와 DispatcherServlet의 차이, 사진업로드를 위한 MultipartResolver 등록방법 등 알지 못했던 새로운 개념들을 익히고 기존에 알던 내용을 복습하는 계기가 되었습니다.</p>
 
 <p>최근에는 Spring 설정을 자동으로 해주어 코드에 집중하게 해주는 Spring boot에 관심을 가지고 학습, 적용해보고 있습니다.</p>
 
@@ -140,9 +140,37 @@
 
 <h3 id="mybatis">Mybatis</h3>
 
+<p>JDBCTemplate의 대안으로 Mybatis를 이용하고 있습니다.</p>
+
+<p>mapper를 설정하여 JDBC로 처리하는 상당부분의 코드와 파라미터 설정, 결과 매핑을 대신 도와주는 Persistant Framework입니다.</p>
+
+<p>자바설정으로 SqlSessionFactory와 SqlSession을 생성할하여 Mybatis를 애플리케이션에 연결할 수 있으며 mapper 설정으로 DAO의 메서드에 SQL을 매핑할 수 있습니다.</p>
+
+<p><a href="https://pkch93.github.io/project/2018/10/27/OOD-Refactoring#mybatis">구현예시보기</a></p>
+
 <h3 id="jpa--hibernate">JPA &amp; Hibernate</h3>
 
+<p>최근에 가장 큰 관심을 가지고 학습하고 있는 JPA입니다.</p>
+
+<p>JPA의 <code class="highlighter-rouge">@Entity</code>를 통해 스키마를 정의할 수 있으며 Hibernate의 <code class="highlighter-rouge">@Validate</code> 어노테이션으로 각 Column의 제약사항을 구현할 수 있습니다.</p>
+
+<p>또한 JpaRepository를 이용하여 데이터 조작을 할 수 있으며 JpaRepository에 메서드를 추가하여 커스텀할 수 있습니다.</p>
+
+<p><a href="https://pkch93.github.io/project/2018/10/29/Collathon#jpa--hibernate">구현예시보기</a></p>
+
 <h2 id="thymeleaf">Thymeleaf</h2>
+
+<p>Spring boot를 쓰면서 학습한 Thymeleaf Template Engine 입니다.</p>
+
+<p>평소 JSP를 기준으로 학습을 했지만 Spring boot 공식문서에 JSP를 피하라는 문구가 있어 새롭게 학습한 Template Engine입니다.</p>
+
+<blockquote>
+  <p>If possible, JSPs should be avoided. There are several known limitations when using them with embedded servlet containers. (출처:  https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-template-engines)</p>
+</blockquote>
+
+<p>thymeleaf를 활용하여 서버에서 받은 자원들을 뷰로 렌더링 할 수 있으며 JSP에서 사용했던 것처럼 반복문, 제어문, form 데이터 등을 thymeleaf에서 활용할 수 있습니다.</p>
+
+<p>또한, thymeleaf layout dialect를 활용하여 레이아웃 지정 및 include를 구현 할 수 있습니다.</p>
 
 </div>
 
