@@ -33,7 +33,7 @@ thymeleaf & jQuery | Spring boot | H2
 
 ## DB 설계
 
-![](/assets/img/diagram/Collathon/class-diagram.PNG)
+![](/assets/img/project/Collathon/class-diagram.PNG)
 
 ## 주요 사용 기능
 

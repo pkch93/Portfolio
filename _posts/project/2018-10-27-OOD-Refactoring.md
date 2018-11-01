@@ -26,7 +26,7 @@ java (JDK 1.8) | HTML5 & CSS3 & javascript & jQuery | Spring 4.3.4 | MySQL | Ecl
 
 ## DB 설계
 
-![](/assets/img/diagram/OOD-Refactoring/class-diagram.PNG)
+![](/assets/img/project/OOD-Refactoring/class-diagram.PNG)
 
 ## 주요 사용 기능
 
