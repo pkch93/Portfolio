@@ -32,12 +32,16 @@ prize:
     host: (재)강원창조경제혁신센터
     date: 2018.06.09
     description: 강원도 도민이 키운 농산물을 중개하여 판매하는 플랫폼
-
+  - name: 우수상
+    title: 다빈치 SW 메이커 페스티벌
+    host: 중앙대학교 다빈치 SW 교육원
+    date: 2018.11.03
+    description: 공공데이터를 활용한 청년 취·창업 정보제공 및 피드백 플랫폼 개발
 activities:
   - name: 다빈치 SW 메이커 페스티벌
     type: 공모전/대회
     period: 2018.10.13~2018.11.03
-    details: 공공데이터를 활용한 청년 취·창업 정보제공 및 홍보 서비스 개발
+    details: 공공데이터를 활용한 청년 취·창업 정보제공 및 피드백 플랫폼 개발
     url: https://pkch93.github.io/project/2018/10/29/Davinch-Makerthon/
   - name: Collathon
     type: 공모전/대회
