@@ -1,11 +1,6 @@
 ---
 ---
-@import "scss/sidebar";
-@import "scss/category";
-@import "scss/post";
-@import "scss/profile";
-@import url("scss/autumn.css");
-
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&subset=korean');
 * {
   font-family: 'Do Hyeon', sans-serif;
   box-sizing: border-box;
@@ -93,3 +88,10 @@ a {
     }
   }
 }
+
+@import "scss/sidebar";
+@import "scss/category";
+@import "scss/post";
+@import "scss/profile";
+@import "scss/timeline";
+@import url("scss/autumn.css");
