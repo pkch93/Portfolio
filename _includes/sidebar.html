@@ -1,17 +1,12 @@
 
 {% assign profile=site.data.introduce.profile %}
-{% assign contact=site.data.contact %}
 {% assign pages_list = site.pages %}
 <nav class="sidebar">
-  <div class="profile">
-    <a href="/"><img src={{profile.img.url}} /></a>
-    <h1 class="profile--name">{{profile.ko.name}}</h1>
-    <p class="profile--intro">
-      {{profile.ko.description}}
-    </p>
+  <div class="title">
+    <img class="profile" src="/assets/img/profile.jpg" alt="profile"/>
+    <h1 class="main-title"><a href="/">PKCH's Portfolio</a></h1>
   </div>
   <div class="menu">
-    <h3><i class="fas fa-list"></i> Catgory</h3>
     <ul class="categories">
         {% for node in pages_list %}
           {% if node.layout == "category" %}
@@ -20,27 +15,6 @@
             </li>
           {% endif %}
         {% endfor %}
-    </ul>
-  </div>
-  <div class="contact">
-    <h3><i class="fas fa-address-card"></i> Contact</h3>
-    {% for email in contact.email%}
-      <p class="email">
-        {% if email.name == "envelope"%}
-          <i class="far fa-{{email.name}}"></i> <span>{{email.mail}}</span>
-        {% else %}
-          <i class="fab fa-{{email.name}}"></i> <span>{{email.mail}}</span>
-        {% endif %}
-      </p>
-    {% endfor %}
-    <ul class="social">
-      {% for social in contact.social %}
-        <li class="icon">
-          <a href="{{social.link}}" target="_blank">
-            <i class="fab fa-{{social.name}}"></i>
-          </a>
-        </li>
-      {% endfor %}
     </ul>
   </div>
 </nav>

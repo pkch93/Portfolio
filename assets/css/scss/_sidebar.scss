@@ -3,39 +3,35 @@
 
 .sidebar{
   position: fixed;
-  min-width: 215px;
-  min-height: 100%;
-  padding: 0 10px 160px;
-  border-right: 1px solid $border-color;
-  background: $sidebar-color;
-  user-select: none;
-  z-index: 10;
-  .profile{
-    text-align: center;
-    > a > img {
-      display: inline-block;
-      margin:10px auto;
-      width: 100px;
+  width: 100%;
+  border-bottom: 1px solid #A9A9A9;
+  background: #fff;
+  .title{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    .profile{
+      width: 45px;
       border-radius: 50%;
-      box-shadow: $profile-shadow;
-    }
-
-    .profile--name {
-      font-size: 30px;
-      margin: 15px auto;
-    }
-
-    .profile--intro{
-      margin: 5px auto;
+      margin: 0 5px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
   }
-
+  .main-title{
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
   .menu{
+    float: right;
     .categories{
+      padding: 0;
+      margin-right: 10px;
       .category{
-        margin: 10px auto;
+        display: inline-block;
+        margin: 10px 0;
         font-size: 20px;
-        list-style: circle;
+        border-right: 1px solid #a9a9a9;
+        padding: 0 15px;
         a {
           cursor: pointer;
         }
@@ -43,30 +39,8 @@
           color: #00f;
         }
       }
-    }
-  }
-
-  .contact {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 10px;
-    height: 155px;
-    .social {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-
-      .icon {
-        font-size: 25px;
-        margin: 0 5px;
-      }
-    }
-
-    .email {
-      span {
-        color: $lightgray;
-        user-select: text;
+      .category:nth-last-child(1){
+        border: none;
       }
     }
   }
