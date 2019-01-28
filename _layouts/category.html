@@ -24,7 +24,7 @@ layout: default
             {% if page.category == "project" %}
               technical stack :
               {% for detail in post.more_details %}
-                <i class="fab fa-{{detail}}"></i>
+                <img class="stack-img" src="/assets/img/logos/{{detail}}.png" />
               {% endfor %}
             {% else %}
               {{post.more_details}}

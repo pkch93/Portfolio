@@ -5,7 +5,7 @@ date: 2018-10-29 11:36:30 +0900
 category: project
 period: 2018.07.14~2018.08.24
 description: 피드백을 받아보기 어려운 강사들을 위한 서비스 개발
-more_details: ["ruby", "rails", "jquery"]
+more_details: ["html5", "css3", "js", "ruby", "rails", "jquery", "git"]
 ---
 
 멋쟁이사자처럼 해커톤 프로젝트 **궁금한 강사** by <!DOCTYPE>

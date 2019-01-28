@@ -6,7 +6,7 @@ category: project
 isprogress: true
 period: 2018.10.22~2018.11.03
 description: 공공데이터를 활용한 청년 취·창업 정보제공 및 홍보 서비스 개발
-more_details: ["js", "node", "react", "sass", "git"]
+more_details: ["js", "nodejs", "express", "react", "sass", "git", "mongodb"]
 ---
 
 다빈치 SW 메이커 페스티벌 &lt;청춘어람> (by 멋쟁이청년처럼)
@@ -17,7 +17,7 @@ more_details: ["js", "node", "react", "sass", "git"]
 
 frontend | backend | DB
 :--------: | :--------: | :--------:
-react.js & sass | Node.js & Koa | MongoDB
+react.js & sass | Node.js & Express.js | MongoDB
 
 ## Member
 

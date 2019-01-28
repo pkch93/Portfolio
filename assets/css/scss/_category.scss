@@ -37,7 +37,14 @@
       }
 
       .stack{
-        float: right;
+        display: flex;
+        justify-content: flex-end;
+        * {
+          margin: 0 3px;
+        }
+        img {
+          height: 20px;
+        }
       }
     }
 
