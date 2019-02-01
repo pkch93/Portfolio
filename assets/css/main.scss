@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&subset=korean');
-@import "scss/sidebar";
-@import "scss/category";
-@import "scss/post";
-@import "scss/profile";
-@import "scss/timeline";
-@import url("scss/autumn.css");
 
 * {
   font-family: 'Do Hyeon', sans-serif;
@@ -33,13 +27,13 @@ a {
 .wrapper{
   display: flex;
   min-height: 100%;
-
+  
   .container{
     width: 100%;
     padding: 0 50px;
     margin: 0 auto;
     margin-top: 100px;
-
+    
     .main__wrapper{
       display: flex;
       margin-top: 100px;
@@ -59,7 +53,7 @@ a {
         color: #fff; 
         text-align: center;
       }
-
+      
       .summary-words{
         font-size: 20px;
         width: 400px;
@@ -76,11 +70,11 @@ a {
         }
         
       }
-
+      
       .summary-words--center{
         text-align: center;
       }
-
+      
       .icons{
         width: 400px;
         margin-top: 20px;
@@ -93,3 +87,10 @@ a {
     }
   }
 }
+
+@import "scss/sidebar";
+@import "scss/category";
+@import "scss/post";
+@import "scss/profile";
+@import "scss/timeline";
+@import url("scss/autumn.css");
