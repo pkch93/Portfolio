@@ -20,17 +20,17 @@ body
 
 .intro-img
   background-image: url("/assets/img/index_img.jpeg")
-  padding-top: 20%
+  padding-top: 15%
   padding-bottom: 10%
   background-repeat: no-repeat
   background-size: cover
   background-position: bottom
 
   h1
-    font: 15vw 'Do Hyeon', sans-serif
+    font: 15vw 'Shadows Into Light', cursive
     text-align: center
     color: #fff
-    font-family: 'Shadows Into Light', cursive
+    transition: font-size .5s
     span
       display: block
       font-size: 5vw
@@ -44,7 +44,40 @@ body
 
   a
     color: #f1f3f5
+
+  .footprints
+    text-align: center
+    padding: 20px
+
+    .title
+      font: 5vw 'Shadows Into Light', cursive
     
+    .footprint
+      background-color: rgba(255, 255, 255, 0.35)
+      padding: 20px
+      border-radius: 15px
+      margin: 25px 0
+
+      img
+        width: 120px
+        height: auto
+        vertical-align: top
+
+      .details
+        dt
+          font: 3vw 'Do Hyeon', sans-serif
+          line-height: 1
+          margin: 20px
+          
+          .times
+            display: block
+            font: 5vw 'impact', sans-serif
+
+        dd
+          margin: 20px
+          font: 2vw 'Nanum Gothic', sans-serif
+
+
   .wrapper
     display: flex
     margin: 100px 50px
@@ -84,7 +117,26 @@ body
       width: 400px
       margin-top: 20px
       padding: 0
-      font-size: 25px
+      font-size: 20px
 
       .icon 
         margin: 5px 0
+
+@media (min-width: 650px)
+  .container
+    .intro-img
+      padding-top: 10%
+      padding-bottom: 5%
+
+    .footprints
+      .footprint
+        box-sizing: border-box
+        width: 50%
+        .details
+          dd
+            font-size: 16px
+
+      .footprint:nth-child(odd)
+        margin-left: auto
+        margin-top: -150px
+        margin-bottom: -200px
