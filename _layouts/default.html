@@ -5,7 +5,7 @@
   <div class="wrapper">
     {% include sidebar.html %}
     <div class="container
-      {%if page.layout == 'post' %}
+      {% if page.layout == 'post' %}
         container__post
       {% endif %}">
       {{content}}
