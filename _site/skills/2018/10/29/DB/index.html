@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>DB - pkch's Portfolio</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+</head>
+<body>
+    
+
+
+<nav class="sidebar">
+  <div class="title">
+    <img class="profile" src="/assets/img/profile.jpg" alt="profile"/>
+    <h1 class="main-title"><a href="/">PKCH's Portfolio</a></h1>
+  </div>
+  <div class="menu">
+    <ul class="categories">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li class="category">
+              <a class="" href="/category/profile/">profile</a>
+            </li>
+          
+        
+          
+            <li class="category">
+              <a class="" href="/category/project/">project</a>
+            </li>
+          
+        
+          
+            <li class="category">
+              <a class=" active " href="/category/skills/">skills</a>
+            </li>
+          
+        
+          
+        
+          
+        
+    </ul>
+  </div>
+</nav>
+
+    <div class="container
+      
+        container__post
+      ">
+      <div class="contents">
+  <h1>DB</h1>
+  <p>데이터베이스 수업을 통해 SQL과 DBMS에 대하여 교육받았습니다.</p>
+
+<p>처음 접한 DB는 Oracle 11g (수업을 통해 처음 입문)이나 세계적으로 많이 쓰이는 MySQL을 잘 다뤄보고 싶어 공부하고 실제로 사용해보았습니다.</p>
+
+<p>데이터베이스를 사용할 때 주로 SQL을 다루는 RDB(관계형 데이터베이스)를 사용합니다. 대부분 MySQL을 사용하였으며 Postgresql은 최근에 관심을 가지게 되어 학습하고 있습니다.</p>
+
+<p>SQL로는 DDL을 활용하여 테이블 생성 및 수정, 삭제 할 수 있으며 CONSTRAINT로 제약사항을 스키마에 넣을 수 있습니다. 또한 DML로 데이터 CRUD와 간단한 JOIN을 구현할 수 있습니다.</p>
+
+<p>SQL과 관련한 자격증으로 SQLD를 취득했습니다. (한국데이터진흥원 주관, 2017.12.29 취득)</p>
+
+<p>이밖에 최근에 NoSQL 진영에서 각광받는 MongoDB에도 큰 관심을 가지고 있습니다.</p>
+
+<h2 id="rdbms">RDBMS</h2>
+
+<p>제가 다룰 줄 아는 RDB로 MySQL과 Postgresql이 있습니다. 실질적으로 Postgresql는 학습만 했기 때문에 프로젝트에서는 MySQL을 주로 사용했습니다.</p>
+
+<h3 id="mysql">MySQL</h3>
+
+<p>MySQL로 DDL과 DML을 사용하여 스키마 조작 및 데이터 조회를 할 수 있습니다. 특히 JDBC와 연계하여 MySQL을 다뤄봤습니다.</p>
+
+<p>아래는 Spring에서 MySQL Driver를 로드하여 Application과 MySQL을 연결한 코드입니다.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre>  <span class="nd">@Bean</span>
+  <span class="kd">public</span> <span class="n">DataSource</span> <span class="nf">dataSource</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">DriverManagerDataSource</span> <span class="n">dm</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DriverManagerDataSource</span><span class="o">();</span>
+    <span class="n">dm</span><span class="o">.</span><span class="na">setDriverClassName</span><span class="o">(</span><span class="s">"com.mysql.cj.jdbc.Driver"</span><span class="o">);</span>
+    <span class="n">dm</span><span class="o">.</span><span class="na">setUrl</span><span class="o">(</span><span class="s">"jdbc:mysql://localhost:3306/ood?"</span>
+    <span class="o">+</span> <span class="s">"SSLuse=false&amp;serverTimezone=UTC&amp;"</span>
+    <span class="o">+</span> <span class="s">"useUnicode=true&amp;characterEncoding=utf8"</span><span class="o">);</span>
+    <span class="n">dm</span><span class="o">.</span><span class="na">setUsername</span><span class="o">(</span><span class="s">"park"</span><span class="o">);</span>
+    <span class="n">dm</span><span class="o">.</span><span class="na">setPassword</span><span class="o">(</span><span class="s">"1234"</span><span class="o">);</span>
+    <span class="k">return</span> <span class="n">dm</span><span class="o">;</span>
+  <span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>MySQL에 접속하기 위해 setUrl 메소드의 내용과 같이 url을 작성합니다. 이 때 제가 쓴 MySQL 버전이 8.0.11인데 MySQL 5.7 이상에서는 SSL을 적용해야 DB에 접근가능합니다. 따라서 개발시 SSL 제약사항을 없애기 위해 잠시 QueryString로 SSLuse=false 설정을 해주었습니다.</p>
+
+<p>아래는 위와 같이 연결한 MySQL에 있는 데이터를 조작하기 위한 Mybatis Mapper xml 코드입니다. (account 정보 조작)</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="cp">&lt;!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;</span>
+<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"com.moviereserve.park.DAO.AccountDAO"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;insert</span> <span class="na">id=</span><span class="s">"create"</span><span class="nt">&gt;</span>
+  	INSERT INTO ACCOUNT VALUES
+  	(#{accountId}, #{accountPw}, #{accountName},
+  	#{phone}, #{address}, #{isAdmin})
+  <span class="nt">&lt;/insert&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"read"</span> <span class="na">resultType=</span><span class="s">"com.moviereserve.park.DTO.Account"</span><span class="nt">&gt;</span>
+  	SELECT * FROM ACCOUNT WHERE ACCOUNTID = #{accountId}
+  <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;delete</span> <span class="na">id=</span><span class="s">"delete"</span><span class="nt">&gt;</span>
+  	DELETE FROM ACCOUNT WHERE ACCOUNTID = #{accountId}
+  <span class="nt">&lt;/delete&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"login"</span> <span class="na">resultType=</span><span class="s">"com.moviereserve.park.DTO.Account"</span><span class="nt">&gt;</span>
+  	SELECT * FROM ACCOUNT WHERE ACCOUNTID = #{accountId} and ACCOUNTPW = #{accountPw}
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/mapper&gt;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>위와 같이 SQL을 사용하여 가입, 조회, 로그인, 탈퇴를 구현할 수 있습니다.</p>
+
+<h2 id="nosql">NoSQL</h2>
+
+<h3 id="mongodb">MongoDB</h3>
+
+<p>저는 MongoDB의 Collection, Document, SubDocument에 대해 이해하고 있습니다. 이를 통해 MongoDB로 Document를 만들 수 있습니다. 또한 MongoDB에서 제공하는 다양한 쿼리함수를 활용하여 데이터를 조작할 수 있습니다.</p>
+
+<p>Node.js에서 MongoDB를 활용하기 좋은 환경을 제공하므로 (mongoose API를 활용) 현재 Node.js의 Koa와 함께 MongoDB를 다뤄보고 있습니다.</p>
+
+</div>
+
+    </div>
+</body>
+</html>

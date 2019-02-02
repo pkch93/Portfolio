@@ -1,0 +1,55 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&subset=korean')
+
+@import "reset.css"
+@import "autumn.css"
+@import "sass/_sidebar"
+
+.container__post
+  display: flex
+  justify-content: center
+  margin: 0
+  padding-top: 100px
+
+  .contents
+    width: 992px
+    padding: 20px
+    overflow-x: auto
+    h1
+      font: 3rem 'Do Hyeon', sans-serif
+
+    h2
+      font: 2rem 'Do Hyeon', sans-serif
+      color: #A9A9A9
+      padding: 20px 0
+
+    h3
+      font: 1.5rem 'Do Hyeon', sans-serif
+      color: #696969 
+      padding: 20px
+      border-bottom: 1px solid #a9a9a9
+      width: 80vw
+
+    p, code 
+      font-family: "Gothic A1", sans-serif
+      line-height: 1.5em
+      width: 80vw
+      margin: 5px 0
+
+    table 
+      border-collapse: collapse
+      border-spacing: 0
+      margin: 10px 0
+      th, td 
+        padding: 10px
+        margin: 0 2px
+        border-bottom: 1px solid #a9a9a9
+
+    .highlight
+      span 
+        font-family: "Nanum Gothic Coding", sans-serif
+
+@media (max-width: 800px)
+  .contents
+    width: 500px

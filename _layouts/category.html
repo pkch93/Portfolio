@@ -1,87 +1,89 @@
 ---
 layout: default
 ---
-<h1 class="title">{{page.category}}</h1>
-{% if page.category != "profile" %}
-<h2 class="recent">Recent Post</h2>
-<ul class="cards">
-  {% for post in site.categories[page.category] %}
-    <a href="{{site.baseurl}}{{post.url}}">
-      <li class="card">
-          <h3>
-            {{post.title}}{% if post.isprogress %} (진행중){% endif %}
-          </h3>
-          {% if post.description %}
-            <p>
-              {{post.description}}
-            </p>
-          {% endif %}
-        <p>
-          {% if post.period %}
-            기간 : {{post.period}}
-          {% endif %}
-          <span class="stack">
-            {% if page.category == "project" %}
-              technical stack :
-              {% for detail in post.more_details %}
-                <img class="stack-img" src="/assets/img/logos/{{detail}}.png" />
-              {% endfor %}
-            {% else %}
-              {{post.more_details}}
-            {% endif %}
-          </span>
-        </p>
-      </li>
-    </a>
-  {% endfor %}
-</ul>
-{% else %}
-<div class="profile">
-  <h2 class="subtitle">학력 / Education</h2>
+<div class="wrapper">
+  <h1 class="title">{{page.category}}</h1>
+  {% if page.category != "profile" %}
+  <h2 class="recent">Recent Post</h2>
   <ul class="cards">
-    {% for edu in site.data.profile.education %}
-      <li class="card">
-        <h3>{{edu.school}}{{edu.academic}}</h3>
-        <p>재학기간 : {{edu.period}} | 재학여부 : {{edu.status}}</p>
-        {% if edu.academic == "대학교" %}
-          <p>주전공 : {{edu.major.main}} | 부전공 : {{edu.major.sub}}</p>
+    {% for post in site.categories[page.category] %}
+      <a href="{{site.baseurl}}{{post.url}}">
+        <li class="card">
+            <h3>
+              {{post.title}}{% if post.isprogress %} (진행중){% endif %}
+            </h3>
+            {% if post.description %}
+              <p>
+                {{post.description}}
+              </p>
+            {% endif %}
           <p>
-            총 이수학점 : {{edu.credit.total}}학점 ({{edu.credit.average}} / 4.5) |
-            컴퓨터공학 이수학점 : {{edu.credit.subtotal}}학점 ({{edu.credit.subaverage}} / 4.5)
+            {% if post.period %}
+              기간 : {{post.period}}
+            {% endif %}
+            <span class="stack">
+              {% if page.category == "project" %}
+                technical stack :
+                {% for detail in post.more_details %}
+                  <img class="stack-img" src="/assets/img/logos/{{detail}}.png" />
+                {% endfor %}
+              {% else %}
+                {{post.more_details}}
+              {% endif %}
+            </span>
           </p>
-        {% endif %}
-      </li>
+        </li>
+      </a>
     {% endfor %}
   </ul>
-  <h2 class="subtitle">자격증 / Certificate</h2>
+  {% else %}
+  <div class="profile">
+    <h2 class="subtitle">학력 / Education</h2>
     <ul class="cards">
-    {% for cert in site.data.profile.certificate %}
-      <li class="card">
-        <h3>{{cert.name}}</h3>
-        <p>주관처 : {{cert.host}} | 취득일 : {{cert.acquisition_date}}</p>
-      </li>
-    {% endfor %}
-    </ul>
-  <h2 class="subtitle">수상경력 / Prize</h2>
-    <ul class="cards">
-      {% for prize in site.data.profile.prize %}
+      {% for edu in site.data.profile.education %}
         <li class="card">
-          <h3>{{prize.title}} {{prize.name}}</h3>
-          <p>{{prize.description}}</p>
-          <p>주관처 : {{prize.host}} | 수상일 : {{prize.date}}</p>
+          <h3>{{edu.school}}{{edu.academic}}</h3>
+          <p>재학기간 : {{edu.period}} | 재학여부 : {{edu.status}}</p>
+          {% if edu.academic == "대학교" %}
+            <p>주전공 : {{edu.major.main}} | 부전공 : {{edu.major.sub}}</p>
+            <p>
+              총 이수학점 : {{edu.credit.total}}학점 ({{edu.credit.average}} / 4.5) |
+              컴퓨터공학 이수학점 : {{edu.credit.subtotal}}학점 ({{edu.credit.subaverage}} / 4.5)
+            </p>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>
-  <h2 class="subtitle">활동사항 / Activities</h2>
-    <ul class="cards">
-      {% for act in site.data.profile.activities %}
+    <h2 class="subtitle">자격증 / Certificate</h2>
+      <ul class="cards">
+      {% for cert in site.data.profile.certificate %}
         <li class="card">
-          <h3>{{act.name}}</h3>
-          <p>{{act.details}}</p>
-          <p>활동유형 : {{act.type}} | 활동기간 : {{act.period}}</p>
-          <a class="activity_result" href="{{act.url}}">{{act.name}} 활동 결과물 보기</a>
+          <h3>{{cert.name}}</h3>
+          <p>주관처 : {{cert.host}} | 취득일 : {{cert.acquisition_date}}</p>
         </li>
       {% endfor %}
-    </ul>
+      </ul>
+    <h2 class="subtitle">수상경력 / Prize</h2>
+      <ul class="cards">
+        {% for prize in site.data.profile.prize %}
+          <li class="card">
+            <h3>{{prize.title}} {{prize.name}}</h3>
+            <p>{{prize.description}}</p>
+            <p>주관처 : {{prize.host}} | 수상일 : {{prize.date}}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    <h2 class="subtitle">활동사항 / Activities</h2>
+      <ul class="cards">
+        {% for act in site.data.profile.activities %}
+          <li class="card">
+            <h3>{{act.name}}</h3>
+            <p>{{act.details}}</p>
+            <p>활동유형 : {{act.type}} | 활동기간 : {{act.period}}</p>
+            <a class="activity_result" href="{{act.url}}">{{act.name}} 활동 결과물 보기</a>
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+  {% endif %}
 </div>
-{% endif %}

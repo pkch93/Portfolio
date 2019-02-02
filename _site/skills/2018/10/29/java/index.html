@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>Java - pkch's Portfolio</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+</head>
+<body>
+    
+
+
+<nav class="sidebar">
+  <div class="title">
+    <img class="profile" src="/assets/img/profile.jpg" alt="profile"/>
+    <h1 class="main-title"><a href="/">PKCH's Portfolio</a></h1>
+  </div>
+  <div class="menu">
+    <ul class="categories">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li class="category">
+              <a class="" href="/category/profile/">profile</a>
+            </li>
+          
+        
+          
+            <li class="category">
+              <a class="" href="/category/project/">project</a>
+            </li>
+          
+        
+          
+            <li class="category">
+              <a class=" active " href="/category/skills/">skills</a>
+            </li>
+          
+        
+          
+        
+          
+        
+    </ul>
+  </div>
+</nav>
+
+    <div class="container
+      
+        container__post
+      ">
+      <div class="contents">
+  <h1>Java</h1>
+  <p>자바는 제가 컴퓨터공학에 처음 입문했을 때부터 다뤘던 프로그래밍 언어입니다. (2016.09월부터 사용)</p>
+
+<p>얼마 전까지 주로 <em>이클립스</em> 를 통해 Java 코딩을 주로 했으나 최근에 (2018.8월 이후) IntelliJ 학생인증을 받아 학생 라이센스로 <em>IntelliJ</em> 를 사용해보고 있습니다.</p>
+
+<p>자바의 객체지향언어적 특징에 대해 이해하고 있으며 이를 활용해 Override, Overload (다형성 구현)을 적용할 수 있으며 extends와 implements의 차이점을 알고 상황에 맞게 적절히 구현할 수 있습니다.</p>
+
+<p>자바의 Collection 프레임워크에 대해 이해하고 있으며 이를 상황에 맞게 적절히 사용할 수 있습니다.</p>
+
+<p>※ Collection 프레임워크?</p>
+
+<p>Java에서 다수의 데이터를 효과적으로 제어하기 위해 표준화된 방법을 제공하는 객체의 집합입니다. List, Map, Set 등이 대표적인 예입니다.</p>
+
+<p>또한, JDBC를 활용하여 DataSource 객체를 받은 후 Connection을 얻어내 DB와 연결할 수 있습니다. 이와 더불어PreparedStatement와 ResultSet 객체의 조작이 가능합니다.</p>
+
+<p>try-catch-finally를 활용하여 예외 처리를 할 수 있습니다.
+또한 Java 7에서 새롭게 등장한 try-with-resource 기능을 활용할 수 있습니다.</p>
+
+<p>가장 오랫동안 사용한 익숙한 언어이기 때문에 알고리즘 문제를 풀 때 주로 자바를 활용하고 있습니다. <a href="https://github.com/pkch93/Algorithm">자바 알고리즘 풀이저장소 보기 </a></p>
+
+<p>그외에 제네릭, enum 타입 등을 이해하고 있습니다.</p>
+
+<h2 id="java-8">Java 8</h2>
+
+<p>Java에서 가장 혁신적인 변화가 일어난 8 버전을 이해하고 실제 코딩으로 적용해보려고 노력하고 있습니다.</p>
+
+<p>Java 8의 가장 큰 특징은 함수형 언어가 가지고 있는 Lambda식을 Java에서 적용할 수 있다는 점과 Stream API 일 것입니다. 저는 FunctionalInterface를 통해 Lambda식을 적용하는 방법과 Collection 객체에서 Stream을 사용하는 방법에 큰 관심을 가지고 학습, 적용하고 있습니다.</p>
+
+<p>또한 자바 8의 메소드 레퍼런스, Optional&lt;E&gt;도 함께 학습하고 주로 사용하고 있습니다.</p>
+
+<h2 id="jsp--servlet">JSP &amp; Servlet</h2>
+
+<p>Servlet은 Java EE에서 주로 웹페이지를 생성하기 위해 사용되는 Java 클래스입니다. 저는 Servlet의 생명주기 (init -&gt; Service -&gt; Destroy)를 이해하고 있으며 JSP의 탄생배경을 이해하고 있습니다.</p>
+
+<p>또한 JSP에서 자바코드를 사용하게 해주는 스크립트릿(&lt;% … %&gt;)과 표현식(&lt;%= … %&gt;), 선언식 (&lt;%@ … %&gt;)등을 이해하고 있으며 JSTL을 JSP와 함께 활용할 수 있습니다.</p>
+
+<h2 id="junit4">JUnit4</h2>
+
+<p>견고한 어플리케이션을 위해서는 단위 테스트를 활용하는 것이 중요합니다.</p>
+
+<p>JUnit의 실행 절차를 알고 (<code class="highlighter-rouge">@before</code>,<code class="highlighter-rouge">@Test</code>, <code class="highlighter-rouge">@After</code>)
+assert static 메소드와 함께 데이터 테스트 등을 구현할 수 있습니다.</p>
+
+<p>아래는 제가 Spring boot에서 JUnit을 사용했던 코드입니다,</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="nd">@RunWith</span><span class="o">(</span><span class="n">SpringRunner</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="nd">@SpringBootTest</span>
+<span class="nd">@AutoConfigureMockMvc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AppUrlTests</span> <span class="o">{</span>
+    <span class="nd">@Autowired</span>
+    <span class="kd">private</span> <span class="n">MockMvc</span> <span class="n">mockMvc</span><span class="o">;</span>
+
+    <span class="nd">@Test</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">index</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">mockMvc</span><span class="o">.</span><span class="na">perform</span><span class="o">(</span><span class="n">get</span><span class="o">(</span><span class="s">"/"</span><span class="o">))</span>
+                <span class="o">.</span><span class="na">andExpect</span><span class="o">(</span><span class="n">status</span><span class="o">().</span><span class="na">isOk</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">andDo</span><span class="o">(</span><span class="n">print</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">andExpect</span><span class="o">(</span><span class="n">view</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">"index"</span><span class="o">));</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Test</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">login</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">mockMvc</span><span class="o">.</span><span class="na">perform</span><span class="o">(</span><span class="n">get</span><span class="o">(</span><span class="s">"/login"</span><span class="o">))</span>
+                <span class="o">.</span><span class="na">andDo</span><span class="o">(</span><span class="n">print</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">andExpect</span><span class="o">(</span><span class="n">status</span><span class="o">().</span><span class="na">isOk</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
+
+</div>
+
+    </div>
+</body>
+</html>

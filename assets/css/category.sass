@@ -1,0 +1,88 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon')
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&subset=korean')
+
+@import "reset.css"
+@import "sass/sidebar"
+@import "sass/_profile"
+@import "sass/_part/shadows"
+
+html, body
+  min-height: 100%
+
+
+.container
+  display: flex
+  justify-content: center
+  padding-top: 100px
+
+  .wrapper
+    width: 80%
+  
+    .title
+      font: 60px 'Do Hyeon', sans-serif
+      text-align: center
+      padding-bottom: 15px
+
+    .title::after
+      content: " "
+      width: 1.5em
+      display: block
+      margin: 0 auto
+      border-bottom: 3px solid #fd7e14
+
+    .subtitle
+      font: 20px 'Do Hyeon', sans-serif
+      margin: 20px 0
+
+    .recent 
+      color: #a9a9a9
+      text-align: center
+      margin: 20px 0
+      font-size: 40px
+
+    .cards
+      padding: 0 50px
+
+      a 
+        display: block
+        width: 100%
+        margin: 10px 0
+      
+      .activity_result
+        display: inline-block
+        width: inherit
+      
+      .card 
+        width: inherit
+        padding: 15px
+        margin-bottom: 10px
+        border: 1px solid #adb5bd
+
+        h3 
+          font: 30px 'Do Hyeon', sans-serif
+          margin: 0
+
+        p
+          font-family: 'Nanum Gothic', sans-serif
+          margin: 0.5em 0
+
+
+        .activity_result:hover
+          color: #00f
+        
+        .stack
+          display: flex
+          justify-content: flex-end
+          flex-wrap: wrap
+          margin-top: 10px
+
+          * 
+            margin: 0 3px
+          
+          img 
+            height: 20px
+        
+      .card:hover
+        box-shadow: $content-shadow
