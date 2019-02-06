@@ -30,7 +30,6 @@ body
     font: 15vw 'Shadows Into Light', cursive
     text-align: center
     color: #fff
-    transition: font-size .5s
     span
       display: block
       font-size: 5vw
@@ -46,6 +45,7 @@ body
     color: #f1f3f5
 
   .footprints
+    position: relative  
     text-align: center
     padding: 20px
 
@@ -53,10 +53,12 @@ body
       font: 5vw 'Shadows Into Light', cursive
     
     .footprint
-      background-color: rgba(255, 255, 255, 0.35)
-      padding: 20px
-      border-radius: 15px
-      margin: 25px 0
+      .card
+        position: relative
+        background-color: rgba(255, 255, 255, 0.35)
+        padding: 20px
+        border-radius: 15px
+        margin: 25px 0
 
       img
         width: 120px
@@ -75,12 +77,11 @@ body
 
         dd
           margin: 20px
-          font: 2vw 'Nanum Gothic', sans-serif
-
+          font: 2vw 'Nanum Gothic', sans-serif    
 
   .wrapper
     display: flex
-    margin: 100px 50px
+    margin: 200px 50px
     justify-content: center
     flex-wrap: wrap
     
@@ -102,6 +103,7 @@ body
     .summary-words
       width: 400px
       line-height: 1.5
+      font-size: 2.5vw
 
       .word-em
         display: block
@@ -132,6 +134,20 @@ body
       .footprint
         box-sizing: border-box
         width: 50%
+        padding: 0 20px
+        .card:after
+          content: ' '
+          position: absolute
+          top: 12%
+          right: -22px
+          width: 20px
+          height: 20px
+          border: 1px solid #a9a9a9
+          border-radius: 50%
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+          background-color: #fff
+          transform: translate(50%, -50%)
+
         .details
           dd
             font-size: 16px
@@ -140,3 +156,20 @@ body
         margin-left: auto
         margin-top: -150px
         margin-bottom: -200px
+        .card:after
+          left: -40px
+
+      
+    
+    .footprints:after
+      content: ' '
+      position: absolute
+      top: calc(5vw + 120px)
+      bottom: 0
+      left: 50%
+      width: 4px
+      background-color: #fff
+      z-index: -1
+  
+    .wrapper .summary-words
+      font-size: 16px

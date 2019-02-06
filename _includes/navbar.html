@@ -1,7 +1,7 @@
 
 {% assign profile=site.data.introduce.profile %}
 {% assign pages_list = site.pages %}
-<nav class="navbar
+<nav id="navbar" class="navbar
   {% if page.layout == 'main' %}
     navbar-trs
   {% endif %}">
@@ -9,7 +9,8 @@
     <img class="profile" src="/assets/img/profile.jpg" alt="profile"/>
     <h1 class="main-title"><a href="/">PKCH's Portfolio</a></h1>
   </div>
-  <div class="menu">
+  <img id="hamburger" src="/assets/img/hamburger.png">
+  <div id="menu" class="menu">
     <ul class="categories">
         {% for node in pages_list %}
           {% if node.layout == "category" %}
