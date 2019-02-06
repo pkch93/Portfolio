@@ -38,6 +38,14 @@ prize:
     date: 2018.11.03
     description: 공공데이터를 활용한 청년 취·창업 정보제공 및 피드백 플랫폼 개발
 activities:
+  - name: Naver Campus HackDay
+    type: 공모전/대회
+    period: 2018.11.29~2018.11.30
+    details: 네이버 개발자와 함께하는 해커톤!
+  - name: UNIST X Naver D2SF X 멋쟁이 사자처럼 해커톤
+    type: 공모전/대회
+    period: 2018.11.23~2018.11.24
+    details: 지각하는 사람들을 관리하는 스케줄 관리 애플리케이션
   - name: 다빈치 SW 메이커 페스티벌
     type: 공모전/대회
     period: 2018.10.13~2018.11.03
