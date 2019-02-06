@@ -5,7 +5,7 @@ date: 2019-02-06 15:50:00 +0900
 category: project
 period: 2018.12.25~2018.12.31
 description: 신년 맞이 카드 작성 및 공유 서비스
-more_details: ["python", "flask", "postgres"]
+more_details: ["python", "flask", "postgresql"]
 ---
 
 # Card Share Project
@@ -22,73 +22,15 @@ more_details: ["python", "flask", "postgres"]
 
 ## ENVIRONMENT
 
-- Front-End
-
-    > HTML5
-    >
-    > CSS3
-    >
-    > Javascript
-
-- Back-End
-
-    > Python 3.6.7
-    >
-    > Flask 1.0.2
-    >
-    > jinja template engine
-
-- DB
-
-    > postgresql 10.6
-
-- Cloud
-
-    > AWS S3
-    >
-    > Heroku server
+Front-End | Back-End | DB | Cloud
+:---: | :---: | :---: | :---:
+HTML5 / CSS3 / Javascript | Python 3.6.7 / Flask 1.0.2 / Jinja template engine | postgresql 10.6 | AWS S3 / Heroku
 
 ## 기획
 
 ### 행복 카드 공유 서비스
 
-> *평소 전하지 못한 말이나 안부를 추억의 사진과 함께 나누어 행복한 삶을 살아가자*
-
-- Background (이 서비스를 생각하게 된 배경)
-
-    - 크리스마스 카드를 보내려고 했는데 온라인으로 만들기 번거로움
-
-    - 많은 사람들에게 쉽고 빠르게 공유할 수 있는 카드를 만들기 위함
-
-- How it Works (누구를, 어디서, 어떻게)
-
-    Who? 
-    
-    새해, 기념일, 생일, 명절 등 안부 인사를 전하려는 사람들 대상
-
-    Where?
-
-    자주 사용하는 메신저에 링크를 통해 공유
-
-    How?
-
-    전하는 사람과의 추억이 담긴 사진, 의미있는 사진을 글과 함께 작성한다.
-
-    공유한 링크를 클릭했을 때 스스로 만든 온라인 카드가 보여진다.
-
-- Key benefits (기대효과)
-
-    - 많은 사람들이 쉽고 빠르게 추억을 공유할 수 있을 것으로 기대
-
-    - 따뜻한 말 한마디로 인간관계 유지 및 회복
-
-- Marketing (홍보)
-
-    - 지인들에게 카카오톡 공유 및 소개
-
-    - 페이스북 페이지 홍보
-
-    - 커뮤니티 사이트 및 채팅방 홍보
+평소 전하지 못한 말이나 안부를 추억의 사진과 함께 나누어 행복한 삶을 살아가자
 
 ## Use-Case
 

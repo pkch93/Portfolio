@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>Card Share - pkch's Portfolio</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+</head>
+<body>
+    
+
+
+<nav id="navbar" class="navbar
+  ">
+  <div class="title">
+    <img class="profile" src="/assets/img/profile.jpg" alt="profile"/>
+    <h1 class="main-title"><a href="/">PKCH's Portfolio</a></h1>
+  </div>
+  <img id="hamburger" src="/assets/img/hamburger.png">
+  <div id="menu" class="menu">
+    <ul class="categories">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li class="category">
+              <a class="" href="/category/profile/">profile</a>
+            </li>
+          
+        
+          
+            <li class="category">
+              <a class=" active " href="/category/project/">project</a>
+            </li>
+          
+        
+          
+            <li class="category">
+              <a class="" href="/category/skills/">skills</a>
+            </li>
+          
+        
+          
+        
+          
+        
+    </ul>
+  </div>
+</nav>
+
+    <div class="container
+      
+        container__post
+      ">
+      <div class="contents">
+  <h1>Card Share</h1>
+  <h1 id="card-share-project">Card Share Project</h1>
+
+<p>신년 맞이 카드 작성 및 공유 서비스</p>
+
+<h2 id="member">MEMBER</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">이름</th>
+      <th style="text-align: center">역할</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">김호현</td>
+      <td style="text-align: center">서비스 기획 / 홍보</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">박경철</td>
+      <td style="text-align: center">Back-End 개발</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">노우제</td>
+      <td style="text-align: center">Front-End 개발</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="environment">ENVIRONMENT</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Front-End</th>
+      <th style="text-align: center">Back-End</th>
+      <th style="text-align: center">DB</th>
+      <th style="text-align: center">Cloud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">HTML5 / CSS3 / Javascript</td>
+      <td style="text-align: center">Python 3.6.7 / Flask 1.0.2 / Jinja template engine</td>
+      <td style="text-align: center">postgresql 10.6</td>
+      <td style="text-align: center">AWS S3 / Heroku</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="기획">기획</h2>
+
+<h3 id="행복-카드-공유-서비스">행복 카드 공유 서비스</h3>
+
+<p>평소 전하지 못한 말이나 안부를 추억의 사진과 함께 나누어 행복한 삶을 살아가자</p>
+
+<h2 id="use-case">Use-Case</h2>
+
+<p><img src="/assets/img/project/cardshare/Use-case.PNG" alt="유스케이스 다이어그램" /></p>
+
+<blockquote>
+  <p>※ 로그인 없이 간단히 카드를 만들고 메신저를 통해 공유하는 기능의 서비스</p>
+</blockquote>
+
+<h2 id="db-설계">DB 설계</h2>
+
+<p><img src="/assets/img/project/cardshare/Class-diagram.PNG" alt="클래스 다이어그램" /></p>
+
+<blockquote>
+  <ol>
+    <li>
+      <p>회원 관리할 필요가 없이 사용자가 작성한 Card 정보를 DB에 저장 후 카드 템플릿에 렌더링하는 방식이므로 Card Table 한 개만 존재</p>
+    </li>
+    <li>
+      <p>id가 primary key, secret_code는 unique 값으로 uuid를 이용</p>
+    </li>
+    <li>
+      <p>card_type에 따라 사용자가 선택한 card template에 정보를 랜더링</p>
+    </li>
+    <li>
+      <p>img_url은 업로드하는 이미지가 AWS S3에 저장되므로 존재</p>
+    </li>
+  </ol>
+</blockquote>
+
+<h2 id="url-설계">URL 설계</h2>
+
+<ol>
+  <li>{baseurl}/ (index 페이지)</li>
+</ol>
+
+<p>맨 처음 cardshare를 소개하는 페이지로 이동한다. cardshare가 제공하는 다양한 card template를 볼 수 있고 해당 template을 클릭하면 글을 쓸 수 있는 폼으로 이동한다.</p>
+
+<ul>
+  <li>card type 1</li>
+</ul>
+
+<p><img src="/assets/img/project/cardshare/card1.png" alt="카드 타입 1" /></p>
+
+<ul>
+  <li>card type 2</li>
+</ul>
+
+<p><img src="/assets/img/project/cardshare/card2.png" alt="카드 타입 2" /></p>
+
+<ul>
+  <li>card type 3</li>
+</ul>
+
+<p><img src="/assets/img/project/cardshare/card3.png" alt="카드 타입 3" /></p>
+
+<ul>
+  <li>card type 4</li>
+</ul>
+
+<p><img src="/assets/img/project/cardshare/card4.png" alt="카드 타입 4" /></p>
+
+<ol>
+  <li>{baseurl}/card/create (form 페이지)</li>
+</ol>
+
+<p>메인 페이지에서 만들고자 하는 card template를 클릭하면 이동하는 페이지</p>
+
+<p>card type은 url querystring으로 type이라는 키로 값을 전달한다.</p>
+
+<p>form에서는 카드를 받는 사람, 쓰는 사람, 제목, 내용, 사진을 기입해야하며 이 값들을 모두 넣어야만 <strong>미리보기</strong>와 <strong>카드 작성</strong>이 가능하다.</p>
+
+<h3 id="-미리보기-예시">※ 미리보기 예시</h3>
+
+<p><img src="/assets/img/project/cardshare/preview-ex.PNG" alt="미리보기 예시" /></p>
+
+<p>이때 카드에 들어가는 사진의 비율은 1:1이 최적이므로 cropper.js를 통해 올리는 사진을 1:1로 자를 수 있도록 제공해준다. (사진 업로드 시 등장)</p>
+
+<h3 id="-cropper-예시">※ Cropper 예시</h3>
+
+<p><img src="/assets/img/project/cardshare/cropper-ex.PNG" alt="Cropper 예시" /></p>
+
+<ol>
+  <li>{baseurl}/card/<card.secret_code> (작성한 카드의 url)</card.secret_code></li>
+</ol>
+
+<p>위 url로는 작성한 카드를 볼 수 있다. card에 저장된 <strong>secret_code</strong>로 url을 구분한다.</p>
+
+<p>작성한 카드 밑에는 <strong><em>카드 만들기</em></strong> 와 <strong><em>카드 공유하기</em></strong> 가 존재하며 카드 만들기는 index 페이지로 카드 공유하기는 카카오톡 링크를 이용하여 전하고 싶은 상대의 카카오톡 채팅방으로 링크를 전달하도록 해준다.</p>
+
+<h3 id="-완성-카드-예시">※ 완성 카드 예시</h3>
+
+<p><img src="/assets/img/project/cardshare/card-front-ex.PNG" alt="카드 앞면" /></p>
+
+<p><img src="/assets/img/project/cardshare/card-back-ex.PNG" alt="카드 뒷면" /></p>
+
+<h3 id="-카카오톡-공유-예시">※ 카카오톡 공유 예시</h3>
+
+<p><img src="/assets/img/project/cardshare/share-preview.PNG" alt="카카오톡 공유 예시" /></p>
+
+<h2 id="contact">Contact</h2>
+
+<p>site url : <a href="http://cardshare.space">http://cardshare.space</a></p>
+
+<blockquote>
+  <p>email : cardshare.space@gmail.com</p>
+
+  <p>by 김호현, 박경철, 노우제</p>
+</blockquote>
+
+</div>
+
+    </div>
+</body>
+</html>
